@@ -1,0 +1,10 @@
+version: '3'
+services:
+    build:
+        image: registry.gitlab.com/gitlab-ci-utils/docker-puppeteer:node-16
+        working_dir: /home/node/app
+        volumes:
+            - ./:/home/node/app
+        command: bash -c "sleep infinity"
+        ports:
+            - 8080:8080
