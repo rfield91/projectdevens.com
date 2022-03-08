@@ -1,9 +1,25 @@
 # ProjectDevens.com
 
-## Local Development
+## Requirements
 
-1. `npm install`
-2. `npm start`
+1. [Docker](https://www.docker.com/products/docker-desktop)
+
+## Development Setup
+
+### Configuration
+
+Create a `.env` file with the following variables:
+
+```
+DEVELOPMENTPORT=
+```
+
+### Launching the site
+
+1. `docker compose up -d`
+2. `docker exec -it {container name} bash`
+3. `npm install`
+4. `npm start`
 
 ## Website Configuration
 

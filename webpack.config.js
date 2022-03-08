@@ -1,9 +1,8 @@
 const path = require('path');
+require('dotenv').config();
 
 const mode =
     process.env.NODE_ENV === 'production' ? 'production' : 'development';
-
-console.log(mode);
 
 module.exports = {
     mode: mode,
@@ -34,7 +33,9 @@ module.exports = {
         filename: 'bundle.js',
     },
     devServer: {
+        port: process.env.DEVELOPMENTPORT,
         host: '0.0.0.0',
+        hot: true,
         static: {
             directory: path.resolve(__dirname, './build'),
         },
