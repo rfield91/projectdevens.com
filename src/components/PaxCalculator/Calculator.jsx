@@ -1,10 +1,12 @@
 import React, { useEffect, useState, useRef } from 'react';
+import { useLocalStorage } from '../../hooks/useLocalStorage';
 import './Calculator.less';
 
 const Calculator = (props) => {
     const [paxValues] = useState(props.paxValues);
     const [time, setTime] = useState('');
-    const [selectedClass, setSelectedClass] = useState(
+    const [selectedClass, setSelectedClass] = useLocalStorage(
+        'selectedClass',
         paxValues['Street'][0].Pax
     );
     const timeInput = useRef(null);
