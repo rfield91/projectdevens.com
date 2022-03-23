@@ -53,7 +53,6 @@ const Calendar = () => {
         const eventEntries = [];
 
         evs.forEach((ev, index) => {
-            console.log(ev);
             var el = (
                 <div className='event' key={index}>
                     <div className='event-info'>
