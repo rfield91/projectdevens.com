@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../assets/images/project_devens_logo.png';
 import './Home.less';
@@ -16,6 +16,7 @@ const Home = () => {
                 <ul>
                     <li>
                         <Link to='/paxcalculator'>PAX Calculator</Link>
+                        <Link to='/calendar'>Calendar</Link>
                     </li>
                 </ul>
             </nav>
