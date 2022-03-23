@@ -13,11 +13,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/index.js");
 /* harmony import */ var _Home__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Home */ "./src/components/Home.jsx");
 /* harmony import */ var _PaxCalculator_PaxCalculator__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./PaxCalculator/PaxCalculator */ "./src/components/PaxCalculator/PaxCalculator.jsx");
-/* harmony import */ var _App_less__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./App.less */ "./src/components/App.less");
+/* harmony import */ var _Calendar_Calendar__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Calendar/Calendar */ "./src/components/Calendar/Calendar.jsx");
+/* harmony import */ var _App_less__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./App.less */ "./src/components/App.less");
+
 
 
 
@@ -25,17 +27,141 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var App = function App() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__.BrowserRouter, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_5__.Routes, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_5__.Route, {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_5__.BrowserRouter, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__.Routes, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__.Route, {
     exact: true,
     path: "/",
     element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Home__WEBPACK_IMPORTED_MODULE_1__["default"], null)
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_5__.Route, {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__.Route, {
     path: "/paxcalculator",
     element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_PaxCalculator_PaxCalculator__WEBPACK_IMPORTED_MODULE_2__["default"], null)
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__.Route, {
+    path: "/calendar",
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Calendar_Calendar__WEBPACK_IMPORTED_MODULE_3__["default"], null)
   })));
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (App);
+
+/***/ }),
+
+/***/ "./src/components/Calendar/Calendar.jsx":
+/*!**********************************************!*\
+  !*** ./src/components/Calendar/Calendar.jsx ***!
+  \**********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
+/* harmony import */ var _assets_images_project_devens_logo_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../assets/images/project_devens_logo.png */ "./src/assets/images/project_devens_logo.png");
+/* harmony import */ var _Home_less__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../Home.less */ "./src/components/Home.less");
+/* harmony import */ var _Calendar_less__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Calendar.less */ "./src/components/Calendar/Calendar.less");
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+
+
+
+
+
+
+var eventDataJson = __webpack_require__(/*! ../../data/calendar.json */ "./src/data/calendar.json");
+
+var Calendar = function Calendar() {
+  eventDataJson.forEach(function (ev) {
+    var date = new Date(ev.date);
+    ev.parsedDate = date;
+  });
+  eventDataJson.sort(function (a, b) {
+    if (a.parsedDate < b.parsedDate) return -1;
+    if (a.parsedDate > b.parsedDate) return 1;
+    return 0;
+  });
+
+  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(eventDataJson),
+      _useState2 = _slicedToArray(_useState, 1),
+      events = _useState2[0];
+
+  var monthNames = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+  var weekday = ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'];
+  var calendar = [];
+  var months = events.reduce(function (groups, ev) {
+    var month = monthNames[ev.parsedDate.getMonth()];
+    var group = groups[month] || [];
+    group.push(ev);
+    groups[month] = group;
+    return groups;
+  }, {});
+
+  var _loop = function _loop() {
+    var _Object$entries$_i = _slicedToArray(_Object$entries[_i2], 2),
+        month = _Object$entries$_i[0],
+        evs = _Object$entries$_i[1];
+
+    var eventEntries = [];
+    evs.forEach(function (ev, index) {
+      console.log(ev);
+      var el = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+        className: "event",
+        key: index
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+        className: "event-info"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+        className: "club"
+      }, ev.club), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+        className: "name"
+      }, ev.event)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+        className: "date"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+        className: "day-of-week"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+        className: "day"
+      }, ev.parsedDate.getDate()), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+        className: "weekday"
+      }, weekday[ev.parsedDate.getDay()]))));
+      eventEntries.push(el);
+    });
+    var monthEvents = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+      className: "month",
+      key: month
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", null, month), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+      className: "events"
+    }, eventEntries));
+    calendar.push(monthEvents);
+  };
+
+  for (var _i2 = 0, _Object$entries = Object.entries(months); _i2 < _Object$entries.length; _i2++) {
+    _loop();
+  }
+
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "logo"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__.Link, {
+    to: "/"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
+    src: _assets_images_project_devens_logo_png__WEBPACK_IMPORTED_MODULE_1__
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("nav", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("ul", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__.Link, {
+    to: "/paxcalculator"
+  }, "PAX Calculator"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__.Link, {
+    to: "/calendar"
+  }, "Calendar")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "calendar"
+  }, calendar));
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Calendar);
 
 /***/ }),
 
@@ -67,7 +193,9 @@ var Home = function Home() {
     src: _assets_images_project_devens_logo_png__WEBPACK_IMPORTED_MODULE_1__
   }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("nav", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("ul", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.Link, {
     to: "/paxcalculator"
-  }, "PAX Calculator")))));
+  }, "PAX Calculator"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.Link, {
+    to: "/calendar"
+  }, "Calendar")))));
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Home);
@@ -427,6 +555,32 @@ ___CSS_LOADER_EXPORT___.push([module.id, "/* Box sizing rules */\n*,\n*::before,
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/components/Calendar/Calendar.less":
+/*!****************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/components/Calendar/Calendar.less ***!
+  \****************************************************************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/css-loader/dist/runtime/sourceMaps.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+// Imports
+
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, ".calendar .month h3 {\n  text-align: center;\n  padding: 20px;\n}\n.calendar .month .events .event {\n  padding: 10px;\n  display: flex;\n}\n.calendar .month .events .event .event-info {\n  width: 75%;\n}\n.calendar .month .events .event .event-info .club {\n  font-weight: bold;\n}\n.calendar .month .events .event .event-info .name {\n  font-size: 0.75rem;\n}\n.calendar .month .events .event .date {\n  width: 25%;\n  text-align: center;\n}\n.calendar .month .events .event .date .weekday {\n  font-size: 0.75rem;\n}\n.calendar .month .events .event .date .day {\n  font-weight: bold;\n}\n", "",{"version":3,"sources":["webpack://./src/components/Calendar/Calendar.less"],"names":[],"mappings":"AAAA;EAGY,kBAAA;EACA,aAAA;AADZ;AAHA;EASgB,aAAA;EACA,aAAA;AAHhB;AAPA;EAaoB,UAAA;AAHpB;AAVA;EAiBwB,iBAAA;AAJxB;AAbA;EAoBwB,kBAAA;AAJxB;AAhBA;EAyBoB,UAAA;EACA,kBAAA;AANpB;AApBA;EA6BwB,kBAAA;AANxB;AAvBA;EAkCwB,iBAAA;AARxB","sourcesContent":[".calendar {\n    .month {\n        h3 {\n            text-align: center;\n            padding: 20px;\n        }\n\n        .events {\n            .event {\n                padding: 10px;\n                display: flex;\n\n                .event-info {\n                    width: 75%;\n\n                    .club {\n                        // font-size: 0.75rem;\n                        font-weight: bold;\n                    }\n                    .name {\n                        font-size: 0.75rem;\n                    }\n                }\n\n                .date {\n                    width: 25%;\n                    text-align: center;\n\n                    .weekday {\n                        font-size: 0.75rem;\n                    }\n\n                    .day {\n                        // font-size: 0.75rem;\n                        font-weight: bold;\n                    }\n                }\n            }\n        }\n    }\n}\n"],"sourceRoot":""}]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/components/Home.less":
 /*!***************************************************************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/components/Home.less ***!
@@ -446,7 +600,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".logo {\n  display: flex;\n  justify-content: center;\n  padding: 20px;\n}\n.logo a {\n  width: 75%;\n}\nnav ul {\n  list-style-type: none;\n  margin: 0;\n  padding: 0;\n}\nnav ul li {\n  text-align: center;\n}\nnav ul li a {\n  text-decoration: none;\n  display: block;\n  font-size: 24px;\n  padding: 15px;\n  color: black;\n}\nnav ul li a:visited {\n  color: black;\n}\n@media only screen and (min-width: 1024px) {\n  nav ul {\n    display: flex;\n    justify-content: center;\n  }\n  nav ul li {\n    display: inline-block;\n  }\n  nav ul li a::after {\n    display: block;\n    content: '';\n    border-bottom: 1px solid #bf1e2d;\n    transform: scaleX(0);\n    transition: transform 250ms ease-in-out;\n  }\n  nav ul li a:hover::after {\n    transform: scaleX(1);\n  }\n}\n", "",{"version":3,"sources":["webpack://./src/components/Home.less"],"names":[],"mappings":"AAAA;EACI,aAAA;EACA,uBAAA;EACA,aAAA;AACJ;AAJA;EAMQ,UAAA;AACR;AAGA;EAEQ,qBAAA;EACA,SAAA;EACA,UAAA;AAFR;AAFA;EAOY,kBAAA;AAFZ;AALA;EAUgB,qBAAA;EACA,cAAA;EACA,eAAA;EACA,aAAA;EACA,YAAA;AAFhB;AAIgB;EACI,YAAA;AAFpB;AASA;EACI;IAEQ,aAAA;IACA,uBAAA;EARV;EAKE;IAMY,qBAAA;EARd;EAWkB;IACI,cAAA;IACA,WAAA;IACA,gCAAA;IACA,oBAAA;IACA,uCAAA;EATtB;EAWkB;IACI,oBAAA;EATtB;AACF","sourcesContent":[".logo {\n    display: flex;\n    justify-content: center;\n    padding: 20px;\n\n    a {\n        width: 75%;\n    }\n}\n\nnav {\n    ul {\n        list-style-type: none;\n        margin: 0;\n        padding: 0;\n\n        li {\n            text-align: center;\n\n            a {\n                text-decoration: none;\n                display: block;\n                font-size: 24px;\n                padding: 15px;\n                color: black;\n\n                &:visited {\n                    color: black;\n                }\n            }\n        }\n    }\n}\n\n@media only screen and (min-width: 1024px) {\n    nav {\n        ul {\n            display: flex;\n            justify-content: center;\n\n            li {\n                display: inline-block;\n\n                a {\n                    &::after {\n                        display: block;\n                        content: '';\n                        border-bottom: 1px solid #bf1e2d;\n                        transform: scaleX(0);\n                        transition: transform 250ms ease-in-out;\n                    }\n                    &:hover::after {\n                        transform: scaleX(1);\n                    }\n                }\n            }\n        }\n    }\n}\n"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, ".logo {\n  display: flex;\n  justify-content: center;\n  padding: 20px;\n}\n.logo a {\n  width: 75%;\n}\nnav ul {\n  list-style-type: none;\n  margin: 0;\n  padding: 0;\n}\nnav ul li {\n  text-align: center;\n}\nnav ul li a {\n  text-decoration: none;\n  display: block;\n  font-size: 24px;\n  padding: 15px;\n  color: black;\n}\nnav ul li a:visited {\n  color: black;\n}\n@media only screen and (min-width: 1024px) {\n  nav ul {\n    display: flex;\n    justify-content: center;\n  }\n  nav ul li a {\n    display: inline-block;\n  }\n  nav ul li a::after {\n    display: block;\n    content: '';\n    border-bottom: 1px solid #bf1e2d;\n    transform: scaleX(0);\n    transition: transform 250ms ease-in-out;\n  }\n  nav ul li a:hover::after {\n    transform: scaleX(1);\n  }\n}\n", "",{"version":3,"sources":["webpack://./src/components/Home.less"],"names":[],"mappings":"AAAA;EACI,aAAA;EACA,uBAAA;EACA,aAAA;AACJ;AAJA;EAMQ,UAAA;AACR;AAGA;EAEQ,qBAAA;EACA,SAAA;EACA,UAAA;AAFR;AAFA;EAOY,kBAAA;AAFZ;AALA;EAUgB,qBAAA;EACA,cAAA;EACA,eAAA;EACA,aAAA;EACA,YAAA;AAFhB;AAIgB;EACI,YAAA;AAFpB;AASA;EACI;IAEQ,aAAA;IACA,uBAAA;EARV;EAKE;IASgB,qBAAA;EAXlB;EAYkB;IACI,cAAA;IACA,WAAA;IACA,gCAAA;IACA,oBAAA;IACA,uCAAA;EAVtB;EAYkB;IACI,oBAAA;EAVtB;AACF","sourcesContent":[".logo {\n    display: flex;\n    justify-content: center;\n    padding: 20px;\n\n    a {\n        width: 75%;\n    }\n}\n\nnav {\n    ul {\n        list-style-type: none;\n        margin: 0;\n        padding: 0;\n\n        li {\n            text-align: center;\n\n            a {\n                text-decoration: none;\n                display: block;\n                font-size: 24px;\n                padding: 15px;\n                color: black;\n\n                &:visited {\n                    color: black;\n                }\n            }\n        }\n    }\n}\n\n@media only screen and (min-width: 1024px) {\n    nav {\n        ul {\n            display: flex;\n            justify-content: center;\n\n            li {\n                // display: inline-block;\n\n                a {\n                    display: inline-block;\n                    &::after {\n                        display: block;\n                        content: '';\n                        border-bottom: 1px solid #bf1e2d;\n                        transform: scaleX(0);\n                        transition: transform 250ms ease-in-out;\n                    }\n                    &:hover::after {\n                        transform: scaleX(1);\n                    }\n                }\n            }\n        }\n    }\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -32791,6 +32945,60 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 
 /***/ }),
 
+/***/ "./src/components/Calendar/Calendar.less":
+/*!***********************************************!*\
+  !*** ./src/components/Calendar/Calendar.less ***!
+  \***********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/styleDomAPI.js */ "./node_modules/style-loader/dist/runtime/styleDomAPI.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/insertBySelector.js */ "./node_modules/style-loader/dist/runtime/insertBySelector.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js */ "./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/insertStyleElement.js */ "./node_modules/style-loader/dist/runtime/insertStyleElement.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/styleTagTransform.js */ "./node_modules/style-loader/dist/runtime/styleTagTransform.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_node_modules_less_loader_dist_cjs_js_Calendar_less__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/less-loader/dist/cjs.js!./Calendar.less */ "./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/components/Calendar/Calendar.less");
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+var options = {};
+
+options.styleTagTransform = (_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default());
+options.setAttributes = (_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default());
+
+      options.insert = _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default().bind(null, "head");
+    
+options.domAPI = (_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default());
+options.insertStyleElement = (_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default());
+
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_node_modules_less_loader_dist_cjs_js_Calendar_less__WEBPACK_IMPORTED_MODULE_6__["default"], options);
+
+
+
+
+       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_node_modules_less_loader_dist_cjs_js_Calendar_less__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_node_modules_less_loader_dist_cjs_js_Calendar_less__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_node_modules_less_loader_dist_cjs_js_Calendar_less__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
+
+
+/***/ }),
+
 /***/ "./src/components/Home.less":
 /*!**********************************!*\
   !*** ./src/components/Home.less ***!
@@ -33350,6 +33558,16 @@ function _extends() {
 
   return _extends.apply(this, arguments);
 }
+
+/***/ }),
+
+/***/ "./src/data/calendar.json":
+/*!********************************!*\
+  !*** ./src/data/calendar.json ***!
+  \********************************/
+/***/ ((module) => {
+
+module.exports = JSON.parse('[{"club":"NER SCCA","event":"Points Event #1","date":"2022-04-03T00:00:00.000Z"},{"club":"NER SCCA","event":"Points Event #2","date":"2022-04-24T00:00:00.000Z"},{"club":"NER SCCA","event":"Solo School #1","date":"2022-05-14T00:00:00.000Z"},{"club":"NER SCCA","event":"Points Event #3","date":"2022-05-15T00:00:00.000Z"},{"club":"NER SCCA","event":"Points Event #4","date":"2022-05-28T00:00:00.000Z"},{"club":"NER SCCA","event":"Points Event #5","date":"2022-06-12T00:00:00.000Z"},{"club":"NER SCCA","event":"Solo School #2","date":"2022-06-26T00:00:00.000Z"},{"club":"NER SCCA","event":"Points Event #6","date":"2022-07-10T00:00:00.000Z"},{"club":"NER SCCA","event":"Points Event #7","date":"2022-07-31T00:00:00.000Z"},{"club":"NER SCCA","event":"Points Event #8","date":"2022-08-21T00:00:00.000Z"},{"club":"NER SCCA","event":"Points Event #9","date":"2022-09-18T00:00:00.000Z"},{"club":"NER SCCA","event":"Stirling Moss Runoff","date":"2022-10-09T00:00:00.000Z"},{"club":"NER SCCA","event":"Team Challenge","date":"2022-10-30T00:00:00.000Z"},{"club":"Track Club USA","event":"#1","date":"2022-04-02T00:00:00.000Z"},{"club":"Track Club USA","event":"#2","date":"2022-07-03T00:00:00.000Z"},{"club":"Track Club USA","event":"#3","date":"2022-07-23T00:00:00.000Z"},{"club":"Track Club USA","event":"#4","date":"2022-09-25T00:00:00.000Z"},{"club":"SVT","event":"#1","date":"2022-04-16T00:00:00.000Z"},{"club":"SVT","event":"#2","date":"2022-05-08T00:00:00.000Z"},{"club":"SVT","event":"#3","date":"2022-06-18T00:00:00.000Z"},{"club":"SVT","event":"#4","date":"2022-07-24T00:00:00.000Z"},{"club":"SVT","event":"#5","date":"2022-09-03T00:00:00.000Z"},{"club":"SVT","event":"#6","date":"2022-10-08T00:00:00.000Z"},{"club":"SVT","event":"#7","date":"2022-10-23T00:00:00.000Z"},{"club":"Renegade Miata","event":"#1","date":"2022-04-09T00:00:00.000Z"},{"club":"Renegade Miata","event":"#2","date":"2022-04-30T00:00:00.000Z"},{"club":"Renegade Miata","event":"#3","date":"2022-05-21T00:00:00.000Z"},{"club":"Renegade Miata","event":"#4","date":"2022-06-11T00:00:00.000Z"},{"club":"Renegade Miata","event":"#5","date":"2022-07-02T00:00:00.000Z"},{"club":"Renegade Miata","event":"#6","date":"2022-08-13T00:00:00.000Z"},{"club":"Renegade Miata","event":"#7","date":"2022-09-10T00:00:00.000Z"},{"club":"Renegade Miata","event":"#8","date":"2022-10-01T00:00:00.000Z"},{"club":"Renegade Miata","event":"#9","date":"2022-10-22T00:00:00.000Z"}]');
 
 /***/ }),
 
