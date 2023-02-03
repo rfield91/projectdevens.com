@@ -1,242 +1,182 @@
 [
     {
-        "club": "NER SCCA",
-        "event": "Points Event #1",
-        "date": "2022-04-03T00:00:00.000"
-    },
-    {
-        "club": "NER SCCA",
-        "event": "Points Event #2",
-        "date": "2022-04-24T00:00:00.000"
-    },
-    {
-        "club": "NER SCCA",
-        "event": "Solo School #1",
-        "date": "2022-05-14T00:00:00.000"
-    },
-    {
-        "club": "NER SCCA",
-        "event": "Points Event #3",
-        "date": "2022-05-15T00:00:00.000"
-    },
-    {
-        "club": "NER SCCA",
-        "event": "Points Event #4",
-        "date": "2022-05-28T00:00:00.000"
-    },
-    {
-        "club": "NER SCCA",
-        "event": "Points Event #5",
-        "date": "2022-06-12T00:00:00.000"
-    },
-    {
-        "club": "NER SCCA",
-        "event": "Solo School #2",
-        "date": "2022-06-26T00:00:00.000"
-    },
-    {
-        "club": "NER SCCA",
-        "event": "Points Event #6",
-        "date": "2022-07-10T00:00:00.000"
-    },
-    {
-        "club": "NER SCCA",
-        "event": "Points Event #7",
-        "date": "2022-07-31T00:00:00.000"
-    },
-    {
-        "club": "NER SCCA",
-        "event": "Points Event #8",
-        "date": "2022-08-21T00:00:00.000"
-    },
-    {
-        "club": "NER SCCA",
-        "event": "Points Event #9",
-        "date": "2022-09-18T00:00:00.000"
-    },
-    {
-        "club": "NER SCCA",
-        "event": "Stirling Moss Runoff",
-        "date": "2022-10-09T00:00:00.000"
-    },
-    {
-        "club": "NER SCCA",
-        "event": "Team Challenge",
-        "date": "2022-10-30T00:00:00.000"
-    },
-    {
-        "club": "Track Club USA",
-        "event": "#1",
-        "date": "2022-04-02T00:00:00.000"
-    },
-    {
-        "club": "Track Club USA",
-        "event": "#2",
-        "date": "2022-07-03T00:00:00.000"
-    },
-    {
-        "club": "Track Club USA",
-        "event": "#3",
-        "date": "2022-07-23T00:00:00.000"
-    },
-    {
-        "club": "Track Club USA",
-        "event": "#4",
-        "date": "2022-09-25T00:00:00.000"
-    },
-    {
         "club": "SVT",
         "event": "#1",
-        "date": "2022-04-16T00:00:00.000"
+        "date": "2023-04-15T00:00:00.000"
     },
     {
         "club": "SVT",
         "event": "#2",
-        "date": "2022-05-08T00:00:00.000"
+        "date": "2023-05-14T00:00:00.000"
     },
     {
         "club": "SVT",
         "event": "#3",
-        "date": "2022-06-18T00:00:00.000"
+        "date": "2023-06-17T00:00:00.000"
     },
     {
         "club": "SVT",
         "event": "#4",
-        "date": "2022-07-24T00:00:00.000"
+        "date": "2023-07-23T00:00:00.000"
     },
     {
         "club": "SVT",
         "event": "#5",
-        "date": "2022-09-03T00:00:00.000"
+        "date": "2023-09-02T00:00:00.000"
     },
     {
         "club": "SVT",
         "event": "#6",
-        "date": "2022-10-08T00:00:00.000"
+        "date": "2023-10-07T00:00:00.000"
     },
     {
         "club": "SVT",
         "event": "#7",
-        "date": "2022-10-23T00:00:00.000"
+        "date": "2023-10-22T00:00:00.000"
     },
     {
-        "club": "Renegade Miata",
+        "club": "BSCC",
         "event": "#1",
-        "date": "2022-04-09T00:00:00.000"
+        "date": "2023-04-16T00:00:00.000"
     },
     {
-        "club": "Renegade Miata",
+        "club": "BSCC",
         "event": "#2",
-        "date": "2022-04-30T00:00:00.000"
+        "date": "2023-06-03T00:00:00.000"
     },
     {
-        "club": "Renegade Miata",
+        "club": "BSCC",
         "event": "#3",
-        "date": "2022-05-21T00:00:00.000"
+        "date": "2023-08-06T00:00:00.000"
     },
     {
-        "club": "Renegade Miata",
+        "club": "BSCC",
         "event": "#4",
-        "date": "2022-06-11T00:00:00.000"
+        "date": "2023-09-03T00:00:00.000"
     },
     {
-        "club": "Renegade Miata",
+        "club": "NCR Porsche",
+        "event": "#1",
+        "date": "2023-04-22T00:00:00.000"
+    },
+    {
+        "club": "NCR Porsche",
+        "event": "#2",
+        "date": "2023-05-28T00:00:00.000"
+    },
+    {
+        "club": "NCR Porsche",
+        "event": "#3",
+        "date": "2023-07-15T00:00:00.000"
+    },
+    {
+        "club": "NCR Porsche",
+        "event": "Zone",
+        "date": "2023-08-26T00:00:00.000"
+    },
+    {
+        "club": "NCR Porsche",
+        "event": "Zone",
+        "date": "2023-08-27T00:00:00.000"
+    },
+    {
+        "club": "NCR Porsche",
+        "event": "#4",
+        "date": "2023-09-10T00:00:00.000"
+    },
+    {
+        "club": "NCR Porsche",
         "event": "#5",
-        "date": "2022-07-02T00:00:00.000"
+        "date": "2023-09-30T00:00:00.000"
     },
     {
-        "club": "Renegade Miata",
-        "event": "#6",
-        "date": "2022-08-13T00:00:00.000"
+        "club": "Mass Tuning",
+        "event": "Lime Rock",
+        "date": "2023-03-18T00:00:00.000"
     },
     {
-        "club": "Renegade Miata",
-        "event": "#7",
-        "date": "2022-09-10T00:00:00.000"
+        "club": "Mass Tuning",
+        "event": "Canaan - Miata Day",
+        "date": "2023-04-29T00:00:00.000"
     },
     {
-        "club": "Renegade Miata",
-        "event": "#8",
-        "date": "2022-10-01T00:00:00.000"
+        "club": "Mass Tuning",
+        "event": "Canaan - CW",
+        "date": "2023-04-30T00:00:00.000"
     },
     {
-        "club": "Renegade Miata",
-        "event": "#9",
-        "date": "2022-10-22T00:00:00.000"
+        "club": "Mass Tuning",
+        "event": "Thompson",
+        "date": "2023-06-12T00:00:00.000"
     },
     {
-        "club": "Boston BMW",
-        "event": "Points Event #1",
-        "date": "2022-04-17T00:00:00.000"
+        "club": "Mass Tuning",
+        "event": "Club Motorsports",
+        "date": "2023-06-17T00:00:00.000"
     },
     {
-        "club": "Boston BMW",
-        "event": "Novice School",
-        "date": "2022-05-01T00:00:00.000"
+        "club": "Mass Tuning",
+        "event": "Palmer - CCW",
+        "date": "2023-07-09T00:00:00.000"
     },
     {
-        "club": "Boston BMW",
-        "event": "Points Event #2",
-        "date": "2022-05-29T00:00:00.000"
+        "club": "Mass Tuning",
+        "event": "Club Motorsports",
+        "date": "2023-08-11T00:00:00.000"
     },
     {
-        "club": "Boston BMW",
-        "event": "Points Event #3",
-        "date": "2022-07-09T00:00:00.000"
+        "club": "Mass Tuning",
+        "event": "NHMS - South Oval",
+        "date": "2023-08-26T00:00:00.000"
     },
     {
-        "club": "Boston BMW",
-        "event": "Points Event #4",
-        "date": "2022-07-17T00:00:00.000"
+        "club": "Mass Tuning",
+        "event": "Palmer - CCW",
+        "date": "2023-09-16T00:00:00.000"
     },
     {
-        "club": "Boston BMW",
-        "event": "TNT",
-        "date": "2022-08-06T00:00:00.000"
+        "club": "Mass Tuning",
+        "event": "Palmer - CW",
+        "date": "2023-10-14T00:00:00.000"
     },
     {
-        "club": "Boston BMW",
-        "event": "Points Event #5",
-        "date": "2022-08-20T00:00:00.000"
+        "club": "Mass Tuning",
+        "event": "Watkins Glen - Boot",
+        "date": "2023-10-21T00:00:00.000"
     },
     {
-        "club": "Boston BMW",
-        "event": "Points Event #6",
-        "date": "2022-09-17T00:00:00.000"
+        "club": "Mass Tuning",
+        "event": "Watkins Glen - Boot",
+        "date": "2023-10-22T00:00:00.000"
     },
     {
-        "club": "Boston BMW",
-        "event": "Novice School",
-        "date": "2022-10-02T00:00:00.000"
+        "club": "Mass Tuning",
+        "event": "Canaan - Time Attack",
+        "date": "2023-11-05T00:00:00.000"
     },
     {
-        "club": "Boston BMW",
-        "event": "Points Event #7",
-        "date": "2022-10-16T00:00:00.000"
+        "club": "ChampCar",
+        "event": "Watkins Glen",
+        "date": "2023-05-26T00:00:00.000"
     },
     {
-        "club": "Boston BMW",
-        "event": "Points Event #8",
-        "date": "2022-10-29T00:00:00.000"
+        "club": "ChampCar",
+        "event": "Watkins Glen",
+        "date": "2023-05-27T00:00:00.000"
     },
     {
-        "club": "BSCC",
-        "event": "#1",
-        "date": "2022-04-10T00:00:00.000"
+        "club": "ChampCar",
+        "event": "Watkins Glen",
+        "date": "2023-05-28T00:00:00.000"
     },
     {
-        "club": "BSCC",
-        "event": "#2",
-        "date": "2022-06-04T00:00:00.000"
+        "club": "ChampCar",
+        "event": "Thompson",
+        "date": "2023-08-25T00:00:00.000"
     },
     {
-        "club": "BSCC",
-        "event": "#3",
-        "date": "2022-08-07T00:00:00.000"
-    },
-    {
-        "club": "BSCC",
-        "event": "#4",
-        "date": "2022-09-11T00:00:00.000"
+        "club": "ChampCar",
+        "event": "Thompson",
+        "date": "2023-08-26T00:00:00.000"
     }
 ]
