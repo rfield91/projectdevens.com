@@ -11,14 +11,14 @@ const DateDisplay = ({ startDate, endDate }: DateDisplayProps) => {
         );
     }
     return (
-        <div>
-            <div>
+        <div className="flex flex-wrap">
+            <span>
                 {startDate.getMonth() + 1}/{startDate.getDate()}
-            </div>
-            <div>to</div>
-            <div>
+            </span>
+            <span className="mx-1">to</span>
+            <span>
                 {endDate.getMonth() + 1}/{endDate.getDate()}
-            </div>
+            </span>
         </div>
     );
 };

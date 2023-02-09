@@ -10,8 +10,8 @@ module.exports = {
         "bg-orange-500",
         "bg-blue-200",
         "bg-blue-500",
-        "bg-red-200",
-        "bg-red-500",
+        "bg-purple-200",
+        "bg-purple-500",
     ],
     theme: {
         extend: {},

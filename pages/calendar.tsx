@@ -37,7 +37,7 @@ const Calendar = ({ events, eventTypes }: CalendarProps) => {
     };
 
     return (
-        <div className="lg:w-1/2 mx-auto md:w-3/4 p-2 bg-slate-100 h-screen">
+        <div className="lg:w-1/2 mx-auto md:w-3/4 p-2 bg-slate-100 pb-20 min-h-screen">
             <EventTypeFilter
                 eventTypes={eventTypes}
                 handleFilterChange={handleFilterChange}
