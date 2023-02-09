@@ -21,6 +21,7 @@ export interface EventType {
     typeName: string;
     filterText: string;
     labelText: string;
+    color: string;
     disabledColor: string;
     enabledColor: string;
 }
