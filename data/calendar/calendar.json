@@ -1,0 +1,203 @@
+[
+    {
+        "club": "SVT",
+        "type": "autocross",
+        "name": "#1",
+        "startDate": "2023-04-15T00:00:00.000",
+        "link": "https://motorsportreg.com/"
+    },
+    {
+        "club": "SVT",
+        "type": "autocross",
+        "name": "#2",
+        "startDate": "2023-05-14T00:00:00.000"
+    },
+    {
+        "club": "SVT",
+        "type": "autocross",
+        "name": "#3",
+        "startDate": "2023-06-17T00:00:00.000"
+    },
+    {
+        "club": "SVT",
+        "type": "autocross",
+        "name": "#4",
+        "startDate": "2023-07-23T00:00:00.000"
+    },
+    {
+        "club": "SVT",
+        "type": "autocross",
+        "name": "#5",
+        "startDate": "2023-09-02T00:00:00.000"
+    },
+    {
+        "club": "SVT",
+        "type": "autocross",
+        "name": "#6",
+        "startDate": "2023-10-07T00:00:00.000"
+    },
+    {
+        "club": "SVT",
+        "type": "autocross",
+        "name": "#7",
+        "startDate": "2023-10-22T00:00:00.000"
+    },
+    {
+        "club": "BSCC",
+        "type": "autocross",
+        "name": "#1",
+        "startDate": "2023-04-16T00:00:00.000"
+    },
+    {
+        "club": "BSCC",
+        "type": "autocross",
+        "name": "#2",
+        "startDate": "2023-06-03T00:00:00.000"
+    },
+    {
+        "club": "BSCC",
+        "type": "autocross",
+        "name": "#3",
+        "startDate": "2023-08-06T00:00:00.000"
+    },
+    {
+        "club": "BSCC",
+        "type": "autocross",
+        "name": "#4",
+        "startDate": "2023-09-03T00:00:00.000"
+    },
+    {
+        "club": "NCR Porsche",
+        "type": "autocross",
+        "name": "#1",
+        "startDate": "2023-04-22T00:00:00.000"
+    },
+    {
+        "club": "NCR Porsche",
+        "type": "autocross",
+        "name": "#2",
+        "startDate": "2023-05-28T00:00:00.000"
+    },
+    {
+        "club": "NCR Porsche",
+        "type": "autocross",
+        "name": "#3",
+        "startDate": "2023-07-15T00:00:00.000"
+    },
+    {
+        "club": "NCR Porsche",
+        "type": "autocross",
+        "name": "Zone",
+        "startDate": "2023-08-26T00:00:00.000"
+    },
+    {
+        "club": "NCR Porsche",
+        "type": "autocross",
+        "name": "Zone",
+        "startDate": "2023-08-27T00:00:00.000"
+    },
+    {
+        "club": "NCR Porsche",
+        "type": "autocross",
+        "name": "#4",
+        "startDate": "2023-09-10T00:00:00.000"
+    },
+    {
+        "club": "NCR Porsche",
+        "type": "autocross",
+        "name": "#5",
+        "startDate": "2023-09-30T00:00:00.000"
+    },
+    {
+        "club": "Mass Tuning",
+        "type": "trackday",
+        "name": "Lime Rock",
+        "startDate": "2023-03-18T00:00:00.000"
+    },
+    {
+        "club": "Mass Tuning",
+        "type": "trackday",
+        "name": "Canaan - Miata Day",
+        "startDate": "2023-04-29T00:00:00.000"
+    },
+    {
+        "club": "Mass Tuning",
+        "type": "trackday",
+        "name": "Canaan - CW",
+        "startDate": "2023-04-30T00:00:00.000"
+    },
+    {
+        "club": "Mass Tuning",
+        "type": "trackday",
+        "name": "Thompson",
+        "startDate": "2023-06-12T00:00:00.000"
+    },
+    {
+        "club": "Mass Tuning",
+        "type": "trackday",
+        "name": "Club Motorsports",
+        "startDate": "2023-06-17T00:00:00.000"
+    },
+    {
+        "club": "Mass Tuning",
+        "type": "trackday",
+        "name": "Palmer - CCW",
+        "startDate": "2023-07-09T00:00:00.000"
+    },
+    {
+        "club": "Mass Tuning",
+        "type": "trackday",
+        "name": "Club Motorsports",
+        "startDate": "2023-08-11T00:00:00.000"
+    },
+    {
+        "club": "Mass Tuning",
+        "type": "trackday",
+        "name": "NHMS - South Oval",
+        "startDate": "2023-08-26T00:00:00.000"
+    },
+    {
+        "club": "Mass Tuning",
+        "type": "trackday",
+        "name": "Palmer - CCW",
+        "startDate": "2023-09-16T00:00:00.000"
+    },
+    {
+        "club": "Mass Tuning",
+        "type": "trackday",
+        "name": "Palmer - CW",
+        "startDate": "2023-10-14T00:00:00.000"
+    },
+    {
+        "club": "Mass Tuning",
+        "type": "trackday",
+        "name": "Watkins Glen - Boot",
+        "startDate": "2023-10-21T00:00:00.000"
+    },
+    {
+        "club": "Mass Tuning",
+        "type": "trackday",
+        "name": "Watkins Glen - Boot",
+        "startDate": "2023-10-22T00:00:00.000"
+    },
+    {
+        "club": "Mass Tuning",
+        "type": "trackday",
+        "name": "Canaan - Time Attack",
+        "startDate": "2023-11-05T00:00:00.000"
+    },
+    {
+        "club": "ChampCar",
+        "type": "w2w",
+        "name": "Watkins Glen",
+        "startDate": "2023-05-26T00:00:00.000",
+        "endDate": "2023-05-28T00:00:00.000"
+    },
+    {
+        "club": "ChampCar",
+        "type": "w2w",
+        "name": "Thompson",
+        "startDate": "2023-08-25T00:00:00.000",
+        "endDate": "2023-08-26T00:00:00.000"
+    }
+]

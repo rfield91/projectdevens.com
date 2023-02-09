@@ -1,0 +1,23 @@
+[
+    {
+        "typeName": "autocross",
+        "filterText": "Autocross",
+        "labelText": "AX",
+        "disabledColor": "bg-orange-200",
+        "enabledColor": "bg-orange-500"
+    },
+    {
+        "typeName": "trackday",
+        "filterText": "Trackday",
+        "labelText": "TD",
+        "disabledColor": "bg-blue-200",
+        "enabledColor": "bg-blue-500"
+    },
+    {
+        "typeName": "w2w",
+        "filterText": "W2W",
+        "labelText": "W2",
+        "disabledColor": "bg-red-200",
+        "enabledColor": "bg-red-500"
+    }
+]
