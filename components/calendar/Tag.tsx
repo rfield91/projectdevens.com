@@ -1,4 +1,10 @@
-import { TagProps } from "../../common/types";
+import { FilterState, IEventType } from "../../common/types";
+
+export interface TagProps {
+    tag: IEventType;
+    filterState: FilterState;
+    handleOnClick: (newStatus: FilterState) => any;
+}
 
 const Tag = ({ tag, filterState, handleOnClick }: TagProps) => {
     const handleToggle = () => {

@@ -1,4 +1,9 @@
-export interface CalendarEvent {
+export interface IClub {
+    club: string;
+    events: ICalendarEvent[];
+}
+
+export interface ICalendarEvent {
     club: string;
     type: string;
     name: string;
@@ -7,49 +12,13 @@ export interface CalendarEvent {
     link: string;
 }
 
-export interface CalendarProps {
-    events: CalendarEvent[];
-    eventTypes: EventType[];
-}
-
-export interface DateDisplayProps {
-    startDate: Date;
-    endDate?: Date;
-}
-
-export interface EventType {
+export interface IEventType {
     typeName: string;
     filterText: string;
     labelText: string;
     color: string;
     disabledColor: string;
     enabledColor: string;
-}
-
-export interface TypeTagDisplayProps {
-    eventType: EventType;
-}
-
-export interface EventTypeFilterProps {
-    eventTypes: EventType[];
-    handleFilterChange: (updatedTypes: string[]) => any;
-}
-
-export interface TagProps {
-    tag: EventType;
-    filterState: FilterState;
-    handleOnClick: (newStatus: FilterState) => any;
-}
-
-export interface EventDisplayProps {
-    event: CalendarEvent;
-    eventType: EventType;
-}
-
-export interface EventsDisplayProps {
-    events: CalendarEvent[];
-    eventTypes: EventType[];
-    typesToShow: string[];
 }
 
 export class FilterState {

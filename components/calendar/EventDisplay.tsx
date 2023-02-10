@@ -1,7 +1,12 @@
 import Link from "next/link";
-import { EventDisplayProps } from "../../common/types";
+import { ICalendarEvent, IEventType } from "../../common/types";
 import DateDisplay from "./DateDisplay";
 import TypeTagDisplay from "./TypeTagDisplay";
+
+export interface EventDisplayProps {
+    event: ICalendarEvent;
+    eventType: IEventType;
+}
 
 const EventDisplay = ({ event, eventType }: EventDisplayProps) => {
     const startDate: Date = new Date(event.startDate);

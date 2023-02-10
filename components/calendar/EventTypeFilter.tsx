@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react";
-import {
-    EventType,
-    EventTypeFilterProps,
-    FilterState,
-} from "../../common/types";
+import { FilterState, IEventType } from "../../common/types";
 import Tag from "./Tag";
+
+export interface EventTypeFilterProps {
+    eventTypes: IEventType[];
+    handleFilterChange: (updatedTypes: string[]) => any;
+}
 
 const EventTypeFilter = ({
     eventTypes,
@@ -46,7 +47,7 @@ const EventTypeFilter = ({
         setFilterStates(newStates);
     };
 
-    const eventTypeMap = new Map<string, EventType>();
+    const eventTypeMap = new Map<string, IEventType>();
     eventTypes.forEach((eventType) =>
         eventTypeMap.set(eventType.typeName, eventType)
     );

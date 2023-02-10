@@ -1,4 +1,8 @@
-import { TypeTagDisplayProps } from "../../common/types";
+import { IEventType } from "../../common/types";
+
+export interface TypeTagDisplayProps {
+    eventType: IEventType;
+}
 
 const TypeTagDisplay = ({ eventType }: TypeTagDisplayProps) => {
     if (eventType === undefined) return <span></span>;

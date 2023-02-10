@@ -17,7 +17,7 @@ const Home = () => {
 
     const links = pages.map((page) => {
         return (
-            <li className="mx-6 mt-2">
+            <li className="mx-6 mt-2" key={page.key}>
                 <Link
                     className="text-xl inline-block p-2 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
                     href={page.link}
@@ -29,13 +29,13 @@ const Home = () => {
     });
 
     return (
-        <div>
-            <div className="flex justify-center mt-10">
+        <div className="bg-slate-100 h-screen">
+            <div className="flex justify-center py-10">
                 <Image
                     src="/images/project_devens_logo.png"
                     alt="PROJECT.Devens Logo"
-                    width={500}
-                    height={500}
+                    width={150}
+                    height={150}
                 />
             </div>
 

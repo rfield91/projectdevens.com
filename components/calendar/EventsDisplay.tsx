@@ -1,22 +1,24 @@
-import {
-    CalendarEvent,
-    EventsDisplayProps,
-    EventType,
-} from "../../common/types";
+import { ICalendarEvent, IEventType } from "../../common/types";
 import EventDisplay from "./EventDisplay";
+
+export interface EventsDisplayProps {
+    events: ICalendarEvent[];
+    eventTypes: IEventType[];
+    typesToShow: string[];
+}
 
 const EventsDisplay = ({
     events,
     eventTypes,
     typesToShow,
 }: EventsDisplayProps) => {
-    const filters = new Map<string, EventType>();
+    const filters = new Map<string, IEventType>();
 
     eventTypes.forEach((eventType) =>
         filters.set(eventType.typeName, eventType)
     );
 
-    events.sort((a: CalendarEvent, b: CalendarEvent) => {
+    events.sort((a: ICalendarEvent, b: ICalendarEvent) => {
         return (
             new Date(a.startDate).getTime() - new Date(b.startDate).getTime()
         );
@@ -39,9 +41,9 @@ const EventsDisplay = ({
         "December",
     ];
 
-    const months = new Map<number, CalendarEvent[]>();
+    const months = new Map<number, ICalendarEvent[]>();
 
-    events.forEach((ev: CalendarEvent) => {
+    events.forEach((ev: ICalendarEvent) => {
         const date = new Date(ev.startDate);
         const month = date.getMonth();
 
@@ -58,7 +60,7 @@ const EventsDisplay = ({
         const eventEntries: any = [];
 
         events.forEach((ev, index) => {
-            const eventType: EventType = filters.get(ev.type)!;
+            const eventType: IEventType = filters.get(ev.type)!;
 
             eventEntries.push(
                 <EventDisplay event={ev} eventType={eventType} key={index} />
@@ -78,7 +80,7 @@ const EventsDisplay = ({
     });
 
     return (
-        <div>
+        <div className="px-2">
             {calendar.length > 0 ? (
                 calendar
             ) : (

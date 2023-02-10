@@ -1,4 +1,7 @@
-import { DateDisplayProps } from "../../common/types";
+export interface DateDisplayProps {
+    startDate: Date;
+    endDate?: Date;
+}
 
 const DateDisplay = ({ startDate, endDate }: DateDisplayProps) => {
     if (endDate?.toString() == "Invalid Date" || endDate === undefined) {
