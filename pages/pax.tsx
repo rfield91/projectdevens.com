@@ -18,7 +18,7 @@ export async function getStaticProps() {
     };
 }
 
-const Pax = ({ paxValuesJson }) => {
+const Pax = ({ paxValuesJson }: any) => {
     var json = JSON.parse(paxValuesJson);
     return (
         <div className="bg-slate-100">
