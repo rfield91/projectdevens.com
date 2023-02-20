@@ -1,6 +1,7 @@
-import { useEffect, useState } from "react";
-import { FilterState, IEventType } from "../../common/types";
-import Tag from "./Tag";
+import { useEffect } from 'react';
+import { FilterState, IEventType } from '../../common/types';
+import { useLocalStorage } from '../../hooks/useLocalStorage';
+import Tag from './Tag';
 
 export interface EventTypeFilterProps {
     eventTypes: IEventType[];
@@ -11,27 +12,10 @@ const EventTypeFilter = ({
     eventTypes,
     handleFilterChange,
 }: EventTypeFilterProps) => {
-    const [filterStates, setFilterStates] = useState<FilterState[]>([]);
-
-    useEffect(() => {
-        const saved = localStorage.getItem("eventTypeFilters");
-        if (saved) {
-            const savedFilters: FilterState[] = JSON.parse(saved);
-
-            setFilterStates(savedFilters);
-        } else {
-            const defaultFilters = eventTypes.map(
-                (eventType) => new FilterState(eventType.typeName, true)
-            );
-
-            localStorage.setItem(
-                "eventTypeFilters",
-                JSON.stringify(defaultFilters)
-            );
-
-            setFilterStates(defaultFilters);
-        }
-    }, []);
+    const [filterStates, setFilterStates] = useLocalStorage<FilterState[]>(
+        'eventTypeFilters',
+        []
+    );
 
     useEffect(() => {
         handleFilterChange(
@@ -39,37 +23,41 @@ const EventTypeFilter = ({
         );
     }, [filterStates]);
 
-    const handleToggleFilterStatus = (newState: FilterState) => {
-        const newStates = [...filterStates];
-        var index = newStates.findIndex((f) => f.typeName == newState.typeName);
-        newStates[index] = newState;
-        localStorage.setItem("eventTypeFilters", JSON.stringify(newStates));
-        setFilterStates(newStates);
-    };
+    const handleToggleFilterStatus =
+        (eventType: IEventType) => (toggled: boolean) => {
+            const nextFilterStates = [...filterStates];
+            const index = nextFilterStates.findIndex(
+                (f) => f.typeName == eventType.typeName
+            );
+            if (index === -1) {
+                nextFilterStates.push({
+                    typeName: eventType.typeName,
+                    isEnabled: toggled,
+                });
+            } else {
+                nextFilterStates[index].isEnabled = toggled;
+            }
+            setFilterStates(nextFilterStates);
+        };
 
-    const eventTypeMap = new Map<string, IEventType>();
-    eventTypes.forEach((eventType) =>
-        eventTypeMap.set(eventType.typeName, eventType)
+    return (
+        <div className="text-center my-5">
+            {eventTypes.map((eventType) => (
+                <Tag
+                    enabled={
+                        !!filterStates.find(
+                            (f) => f.typeName == eventType.typeName
+                        )?.isEnabled
+                    }
+                    key={eventType.typeName}
+                    color={eventType.color}
+                    onClick={handleToggleFilterStatus(eventType)}
+                >
+                    {eventType.typeName}
+                </Tag>
+            ))}
+        </div>
     );
-
-    const tags: React.ReactElement[] = [];
-
-    eventTypeMap.forEach((eventType) => {
-        tags.push(
-            <Tag
-                tag={eventType}
-                filterState={
-                    filterStates?.find(
-                        (fs) => fs.typeName == eventType.typeName
-                    ) ?? new FilterState(eventType.typeName, true)
-                }
-                key={eventType.typeName}
-                handleOnClick={handleToggleFilterStatus}
-            />
-        );
-    });
-
-    return <div className="text-center my-5">{tags}</div>;
 };
 
 export default EventTypeFilter;
