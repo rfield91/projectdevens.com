@@ -7,8 +7,6 @@ const PaxCalculator = ({ paxValuesJson }) => {
     const [time, setTime] = useState(0);
     const [selectedClass, setSelectedClass] = useState("");
 
-    console.log("paxValues", paxValues);
-
     const updateTime = (updatedTime) => {
         setTime(updatedTime);
     };
