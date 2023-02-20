@@ -1,174 +1,374 @@
 [
     {
-        "club": "SVT",
+        "club": "Mass Tuning",
         "events": [
             {
-                "type": "autocross",
-                "name": "Event #1",
-                "startDate": "2023-04-15T00:00:00.000"
+                "club": "Mass Tuning",
+                "type": "trackday",
+                "name": "New Jersey Motorsports Park (Thunderbolt)",
+                "startDate": "2023-03-11T00:00:00",
+                "endDate": null,
+                "link": "http://www.msreg.com/trackfest1"
             },
             {
-                "type": "autocross",
-                "name": "Event #2",
-                "startDate": "2023-05-14T00:00:00.000"
+                "club": "Mass Tuning",
+                "type": "trackday",
+                "name": "New Jersey Motorsports Park (Lightning)",
+                "startDate": "2023-03-12T00:00:00",
+                "endDate": null,
+                "link": "http://www.msreg.com/trackfest2"
             },
             {
-                "type": "autocross",
-                "name": "Event #3",
-                "startDate": "2023-06-17T00:00:00.000"
+                "club": "Mass Tuning",
+                "type": "trackday",
+                "name": "Lime Rock Park",
+                "startDate": "2023-03-18T00:00:00",
+                "endDate": null,
+                "link": "http://www.msreg.com/trackfest3"
             },
             {
-                "type": "autocross",
-                "name": "Event #4",
-                "startDate": "2023-07-23T00:00:00.000"
+                "club": "Mass Tuning",
+                "type": "trackday",
+                "name": "Thompson Speedway",
+                "startDate": "2023-03-24T00:00:00",
+                "endDate": null,
+                "link": "http://www.msreg.com/trackfest4"
             },
             {
-                "type": "autocross",
-                "name": "Event #5",
-                "startDate": "2023-09-02T00:00:00.000"
+                "club": "Mass Tuning",
+                "type": "trackday",
+                "name": "Thompson Speedway",
+                "startDate": "2023-03-25T00:00:00",
+                "endDate": null,
+                "link": "http://www.msreg.com/trackfest5"
             },
             {
-                "type": "autocross",
-                "name": "Event #6",
-                "startDate": "2023-10-07T00:00:00.000"
+                "club": "Mass Tuning",
+                "type": "trackday",
+                "name": "Palmer Motorsports Park (Counter-clockwise)",
+                "startDate": "2023-04-01T00:00:00",
+                "endDate": null,
+                "link": "http://www.msreg.com/trackfest6"
             },
             {
-                "type": "autocross",
-                "name": "Event #7",
-                "startDate": "2023-10-22T00:00:00.000"
-            }
-        ]
-    },
-    {
-        "club": "BSCC",
-        "events": [
-            {
-                "type": "autocross",
-                "name": "Event #1",
-                "startDate": "2023-04-16T00:00:00.000"
+                "club": "Mass Tuning",
+                "type": "trackday",
+                "name": "Palmer Motorsports Park (Clockwise)",
+                "startDate": "2023-04-02T00:00:00",
+                "endDate": null,
+                "link": "http://www.msreg.com/trackfest7"
             },
             {
-                "type": "autocross",
-                "name": "Event #2",
-                "startDate": "2023-06-03T00:00:00.000"
+                "club": "Mass Tuning",
+                "type": "trackday",
+                "name": "Thompson Speedway",
+                "startDate": "2023-04-16T00:00:00",
+                "endDate": null,
+                "link": "http://www.msreg.com/trackfest8"
             },
             {
-                "type": "autocross",
-                "name": "Event #3",
-                "startDate": "2023-07-30T00:00:00.000"
+                "club": "Mass Tuning",
+                "type": "trackday",
+                "name": "Thompson Speedway",
+                "startDate": "2023-04-17T00:00:00",
+                "endDate": null,
+                "link": "http://www.msreg.com/trackfest9"
             },
             {
-                "type": "autocross",
-                "name": "Event #4",
-                "startDate": "2023-09-03T00:00:00.000"
-            }
-        ]
-    },
-    {
-        "club": "TCUSA",
-        "events": [
-            {
-                "type": "autocross",
-                "name": "Event #1",
-                "startDate": "2023-04-08T00:00:00.000"
+                "club": "Mass Tuning",
+                "type": "trackday",
+                "name": "Palmer Motorsports Park (Clockwise)",
+                "startDate": "2023-04-22T00:00:00",
+                "endDate": null,
+                "link": "http://www.msreg.com/trackfest10"
             },
             {
-                "type": "autocross",
-                "name": "Event #2",
-                "startDate": "2023-07-02T00:00:00.000"
+                "club": "Mass Tuning",
+                "type": "trackday",
+                "name": "Palmer Motorsports Park (Counter-clockwise)",
+                "startDate": "2023-04-23T00:00:00",
+                "endDate": null,
+                "link": "http://www.msreg.com/trackfest11"
             },
             {
-                "type": "autocross",
-                "name": "Event #3",
-                "startDate": "2023-08-12T00:00:00.000"
+                "club": "Mass Tuning",
+                "type": "trackday",
+                "name": "Canaan Motor Club (Clockwise)",
+                "startDate": "2023-04-30T00:00:00",
+                "endDate": null,
+                "link": "http://www.msreg.com/trackfest12"
             },
             {
-                "type": "autocross",
-                "name": "Event #4",
-                "startDate": "2023-09-24T00:00:00.000"
-            }
-        ]
-    },
-    {
-        "club": "NCR Porsche",
-        "events": [
-            {
-                "club": "NCR Porsche",
-                "type": "autocross",
-                "name": "Event #1",
-                "startDate": "2023-04-22T00:00:00.000"
+                "club": "Mass Tuning",
+                "type": "trackday",
+                "name": "Palmer Motorsports Park (Counter-clockwise)",
+                "startDate": "2023-05-20T00:00:00",
+                "endDate": null,
+                "link": "http://www.msreg.com/trackfest13"
             },
             {
-                "club": "NCR Porsche",
-                "type": "autocross",
-                "name": "Event #2",
-                "startDate": "2023-05-28T00:00:00.000"
+                "club": "Mass Tuning",
+                "type": "trackday",
+                "name": "Palmer Motorsports Park (Clockwise)",
+                "startDate": "2023-05-21T00:00:00",
+                "endDate": null,
+                "link": "http://www.msreg.com/trackfest14"
             },
             {
-                "club": "NCR Porsche",
-                "type": "autocross",
-                "name": "Event #3",
-                "startDate": "2023-07-15T00:00:00.000"
+                "club": "Mass Tuning",
+                "type": "trackday",
+                "name": "Thompson Speedway",
+                "startDate": "2023-06-11T00:00:00",
+                "endDate": null,
+                "link": "http://www.msreg.com/trackfest15"
             },
             {
-                "club": "NCR Porsche",
-                "type": "autocross",
-                "name": "Zone",
-                "startDate": "2023-08-26T00:00:00.000",
-                "endDate": "2023-08-27T00:00:00.000"
+                "club": "Mass Tuning",
+                "type": "trackday",
+                "name": "Thompson Speedway",
+                "startDate": "2023-06-12T00:00:00",
+                "endDate": null,
+                "link": "http://www.msreg.com/trackfest16"
             },
             {
-                "club": "NCR Porsche",
-                "type": "autocross",
-                "name": "Event #4",
-                "startDate": "2023-09-10T00:00:00.000"
+                "club": "Mass Tuning",
+                "type": "trackday",
+                "name": "Club Motorsports",
+                "startDate": "2023-06-16T00:00:00",
+                "endDate": null,
+                "link": "http://msreg.com/trackfest42"
             },
             {
-                "club": "NCR Porsche",
-                "type": "autocross",
-                "name": "Event #5",
-                "startDate": "2023-09-30T00:00:00.000"
-            }
-        ]
-    },
-    {
-        "club": "NER Porsche",
-        "events": [
-            {
-                "club": "NER Porsche",
-                "type": "autocross",
-                "name": "Event #1",
-                "startDate": "2023-05-06T00:00:00.000"
+                "club": "Mass Tuning",
+                "type": "trackday",
+                "name": "Club Motorsports",
+                "startDate": "2023-06-17T00:00:00",
+                "endDate": null,
+                "link": "http://msreg.com/trackfest43"
             },
             {
-                "club": "NER Porsche",
-                "type": "autocross",
-                "name": "Event #2",
-                "startDate": "2023-05-21T00:00:00.000"
+                "club": "Mass Tuning",
+                "type": "trackday",
+                "name": "Canaan Motor Club (Counter-clockwise)",
+                "startDate": "2023-06-25T00:00:00",
+                "endDate": null,
+                "link": "http://www.msreg.com/trackfest18"
             },
             {
-                "club": "NER Porsche",
-                "type": "autocross",
-                "name": "Event #3",
-                "startDate": "2023-06-18T00:00:00.000"
+                "club": "Mass Tuning",
+                "type": "trackday",
+                "name": "Palmer Motorsports Park (Clockwise)",
+                "startDate": "2023-07-08T00:00:00",
+                "endDate": null,
+                "link": "http://www.msreg.com/trackfest19"
             },
             {
-                "club": "NER Porsche",
-                "type": "autocross",
-                "name": "Event #4",
-                "startDate": "2023-07-22T00:00:00.000"
+                "club": "Mass Tuning",
+                "type": "trackday",
+                "name": "Palmer Motorsports Park (Counter-clockwise)",
+                "startDate": "2023-07-09T00:00:00",
+                "endDate": null,
+                "link": "http://www.msreg.com/trackfest20"
             },
             {
-                "club": "NER Porsche",
-                "type": "autocross",
-                "name": "Event #5",
-                "startDate": "2023-08-13T00:00:00.000"
+                "club": "Mass Tuning",
+                "type": "trackday",
+                "name": "Pineview Run (Clockwise)",
+                "startDate": "2023-07-15T00:00:00",
+                "endDate": null,
+                "link": "http://msreg.com/trackfest46"
             },
             {
-                "club": "NER Porsche",
-                "type": "autocross",
-                "name": "Event #6",
-                "startDate": "2023-10-14T00:00:00.000"
+                "club": "Mass Tuning",
+                "type": "trackday",
+                "name": "Pineview Run (Counter-clockwise)",
+                "startDate": "2023-07-16T00:00:00",
+                "endDate": null,
+                "link": "http://msreg.com/trackfest47"
+            },
+            {
+                "club": "Mass Tuning",
+                "type": "trackday",
+                "name": "Thompson Speedway",
+                "startDate": "2023-07-30T00:00:00",
+                "endDate": null,
+                "link": "http://www.msreg.com/trackfest21"
+            },
+            {
+                "club": "Mass Tuning",
+                "type": "trackday",
+                "name": "Thompson Speedway",
+                "startDate": "2023-07-31T00:00:00",
+                "endDate": null,
+                "link": "http://www.msreg.com/trackfest22"
+            },
+            {
+                "club": "Mass Tuning",
+                "type": "trackday",
+                "name": "Canaan Motor Club (Clockwise)",
+                "startDate": "2023-08-06T00:00:00",
+                "endDate": null,
+                "link": "http://www.msreg.com/trackfest23"
+            },
+            {
+                "club": "Mass Tuning",
+                "type": "trackday",
+                "name": "Club Motorsports",
+                "startDate": "2023-08-11T00:00:00",
+                "endDate": null,
+                "link": "http://msreg.com/trackfest44"
+            },
+            {
+                "club": "Mass Tuning",
+                "type": "trackday",
+                "name": "New Hampshire Motor Speedway (South Oval)",
+                "startDate": "2023-08-26T00:00:00",
+                "endDate": null,
+                "link": "http://www.msreg.com/trackfest24"
+            },
+            {
+                "club": "Mass Tuning",
+                "type": "trackday",
+                "name": "Palmer Motorsports Park (Counter-clockwise)",
+                "startDate": "2023-09-16T00:00:00",
+                "endDate": null,
+                "link": "http://www.msreg.com/trackfest25"
+            },
+            {
+                "club": "Mass Tuning",
+                "type": "trackday",
+                "name": "Palmer Motorsports Park (Clockwise)",
+                "startDate": "2023-09-17T00:00:00",
+                "endDate": null,
+                "link": "http://www.msreg.com/trackfest26"
+            },
+            {
+                "club": "Mass Tuning",
+                "type": "trackday",
+                "name": "Canaan Motor Club (Counter-clockwise)",
+                "startDate": "2023-09-24T00:00:00",
+                "endDate": null,
+                "link": "http://www.msreg.com/trackfest27"
+            },
+            {
+                "club": "Mass Tuning",
+                "type": "trackday",
+                "name": "Thompson Speedway",
+                "startDate": "2023-10-01T00:00:00",
+                "endDate": null,
+                "link": "http://www.msreg.com/trackfest28"
+            },
+            {
+                "club": "Mass Tuning",
+                "type": "trackday",
+                "name": "Thompson Speedway",
+                "startDate": "2023-10-02T00:00:00",
+                "endDate": null,
+                "link": "http://www.msreg.com/trackfest29"
+            },
+            {
+                "club": "Mass Tuning",
+                "type": "trackday",
+                "name": "New York Safety Track (Counter-clockwise)",
+                "startDate": "2023-10-07T00:00:00",
+                "endDate": null,
+                "link": "http://www.msreg.com/trackfest30"
+            },
+            {
+                "club": "Mass Tuning",
+                "type": "trackday",
+                "name": "New York Safety Track (Clockwise)",
+                "startDate": "2023-10-08T00:00:00",
+                "endDate": null,
+                "link": "http://www.msreg.com/trackfest31"
+            },
+            {
+                "club": "Mass Tuning",
+                "type": "trackday",
+                "name": "Palmer Motorsports Park (Clockwise)",
+                "startDate": "2023-10-14T00:00:00",
+                "endDate": null,
+                "link": "http://www.msreg.com/trackfest32"
+            },
+            {
+                "club": "Mass Tuning",
+                "type": "trackday",
+                "name": "Palmer Motorsports Park (Counter-clockwise)",
+                "startDate": "2023-10-15T00:00:00",
+                "endDate": null,
+                "link": "http://www.msreg.com/trackfest33"
+            },
+            {
+                "club": "Mass Tuning",
+                "type": "trackday",
+                "name": "Watkins Glen International (Long Course \u002B Short Course)",
+                "startDate": "2023-10-20T00:00:00",
+                "endDate": null,
+                "link": "http://www.msreg.com/trackfest34"
+            },
+            {
+                "club": "Mass Tuning",
+                "type": "trackday",
+                "name": "Watkins Glen International (Long Course \u002B Short Course)",
+                "startDate": "2023-10-21T00:00:00",
+                "endDate": null,
+                "link": "http://www.msreg.com/trackfest35"
+            },
+            {
+                "club": "Mass Tuning",
+                "type": "trackday",
+                "name": "Watkins Glen International (Long Course \u002B Short Course)",
+                "startDate": "2023-10-22T00:00:00",
+                "endDate": null,
+                "link": "http://www.msreg.com/trackfest36"
+            },
+            {
+                "club": "Mass Tuning",
+                "type": "trackday",
+                "name": "Thompson Speedway",
+                "startDate": "2023-10-29T00:00:00",
+                "endDate": null,
+                "link": "http://www.msreg.com/trackfest37"
+            },
+            {
+                "club": "Mass Tuning",
+                "type": "trackday",
+                "name": "Thompson Speedway",
+                "startDate": "2023-10-30T00:00:00",
+                "endDate": null,
+                "link": "http://www.msreg.com/trackfest38"
+            },
+            {
+                "club": "Mass Tuning",
+                "type": "trackday",
+                "name": "Club Motorsports",
+                "startDate": "2023-11-04T00:00:00",
+                "endDate": null,
+                "link": "http://msreg.com/trackfest45"
+            },
+            {
+                "club": "Mass Tuning",
+                "type": "trackday",
+                "name": "Thompson Speedway",
+                "startDate": "2023-11-10T00:00:00",
+                "endDate": null,
+                "link": "http://www.msreg.com/trackfest39"
+            },
+            {
+                "club": "Mass Tuning",
+                "type": "trackday",
+                "name": "Thompson Speedway",
+                "startDate": "2023-11-11T00:00:00",
+                "endDate": null,
+                "link": "http://www.msreg.com/trackfest40"
+            },
+            {
+                "club": "Mass Tuning",
+                "type": "trackday",
+                "name": "Lime Rock Park",
+                "startDate": "2023-11-18T00:00:00",
+                "endDate": null,
+                "link": "http://www.msreg.com/trackfest41"
             }
         ]
     },
@@ -178,81 +378,114 @@
             {
                 "club": "NER SCCA",
                 "type": "autocross",
-                "name": "Knock The Rust Off",
-                "startDate": "2023-04-02T00:00:00.000"
+                "name": "Knock the Rust Off (non-points)",
+                "startDate": "2023-04-02T00:00:00",
+                "endDate": null,
+                "link": null
             },
             {
                 "club": "NER SCCA",
                 "type": "autocross",
                 "name": "Points #1",
-                "startDate": "2023-04-23T00:00:00.000"
+                "startDate": "2023-04-23T00:00:00",
+                "endDate": null,
+                "link": null
             },
             {
                 "club": "NER SCCA",
                 "type": "autocross",
                 "name": "Points #2",
-                "startDate": "2023-05-07T00:00:00.000"
+                "startDate": "2023-05-07T00:00:00",
+                "endDate": null,
+                "link": null
             },
             {
                 "club": "NER SCCA",
                 "type": "autocross",
                 "name": "Points #3",
-                "startDate": "2023-05-27T00:00:00.000"
+                "startDate": "2023-05-27T00:00:00",
+                "endDate": null,
+                "link": null
             },
             {
                 "club": "NER SCCA",
                 "type": "autocross",
                 "name": "Points #4",
-                "startDate": "2023-06-11T00:00:00.000"
+                "startDate": "2023-06-11T00:00:00",
+                "endDate": null,
+                "link": null
+            },
+            {
+                "club": "NER SCCA",
+                "type": "autocross",
+                "name": "EVO School #1",
+                "startDate": "2023-06-24T00:00:00",
+                "endDate": null,
+                "link": null
+            },
+            {
+                "club": "NER SCCA",
+                "type": "autocross",
+                "name": "EVO School #2",
+                "startDate": "2023-06-25T00:00:00",
+                "endDate": null,
+                "link": null
             },
             {
                 "club": "NER SCCA",
                 "type": "autocross",
                 "name": "Points #5",
-                "startDate": "2023-07-09T00:00:00.000"
+                "startDate": "2023-07-09T00:00:00",
+                "endDate": null,
+                "link": null
             },
             {
                 "club": "NER SCCA",
                 "type": "autocross",
                 "name": "Points #6",
-                "startDate": "2023-08-06T00:00:00.000"
+                "startDate": "2023-07-30T00:00:00",
+                "endDate": null,
+                "link": null
             },
             {
                 "club": "NER SCCA",
                 "type": "autocross",
                 "name": "Points #7",
-                "startDate": "2023-08-20T00:00:00.000"
+                "startDate": "2023-08-20T00:00:00",
+                "endDate": null,
+                "link": null
             },
             {
                 "club": "NER SCCA",
                 "type": "autocross",
                 "name": "Points #8",
-                "startDate": "2023-09-17T00:00:00.000"
+                "startDate": "2023-09-17T00:00:00",
+                "endDate": null,
+                "link": null
             },
             {
                 "club": "NER SCCA",
                 "type": "autocross",
-                "name": "Points #9 & Stirling Moss",
-                "startDate": "2023-10-08T00:00:00.000"
+                "name": "Points #9/Moss",
+                "startDate": "2023-10-08T00:00:00",
+                "endDate": null,
+                "link": null
             },
             {
                 "club": "NER SCCA",
                 "type": "autocross",
-                "name": "EVO Performance Driving School",
-                "startDate": "2023-06-24T00:00:00.000",
-                "endDate": "2023-06-25T00:00:00.000"
-            },
-            {
-                "club": "NER SCCA",
-                "type": "autocross",
-                "name": "Teach Challenge",
-                "startDate": "2023-10-28T00:00:00.000"
+                "name": "Team Challenge",
+                "startDate": "2023-10-28T00:00:00",
+                "endDate": null,
+                "link": null
             },
             {
                 "club": "NER SCCA",
                 "type": "autocross",
                 "name": "Devens Interclub Championship",
-                "startDate": "2023-10-29T00:00:00.000"
+                "startDate": "2023-10-29T00:00:00",
+                "endDate": null,
+                "link": null
             }
         ]
     },
@@ -262,383 +495,265 @@
             {
                 "club": "Renegade Miata",
                 "type": "autocross",
-                "name": "Event #1",
-                "startDate": "2023-04-01T00:00:00.000"
+                "name": "Event 1",
+                "startDate": "2023-04-01T00:00:00",
+                "endDate": null,
+                "link": null
             },
             {
                 "club": "Renegade Miata",
                 "type": "autocross",
-                "name": "Event #2",
-                "startDate": "2023-04-29T00:00:00.000"
+                "name": "Event 2",
+                "startDate": "2023-04-29T00:00:00",
+                "endDate": null,
+                "link": null
             },
             {
                 "club": "Renegade Miata",
                 "type": "autocross",
-                "name": "Event #3",
-                "startDate": "2023-05-20T00:00:00.000"
+                "name": "Event 3",
+                "startDate": "2023-05-20T00:00:00",
+                "endDate": null,
+                "link": null
             },
             {
                 "club": "Renegade Miata",
                 "type": "autocross",
-                "name": "Event #4",
-                "startDate": "2023-06-10T00:00:00.000"
+                "name": "Event 4",
+                "startDate": "2023-06-10T00:00:00",
+                "endDate": null,
+                "link": null
             },
             {
                 "club": "Renegade Miata",
                 "type": "autocross",
-                "name": "Event #5",
-                "startDate": "2023-07-01T00:00:00.000"
+                "name": "Event 5",
+                "startDate": "2023-07-01T00:00:00",
+                "endDate": null,
+                "link": null
             },
             {
                 "club": "Renegade Miata",
                 "type": "autocross",
-                "name": "Event #6",
-                "startDate": "2023-07-29T00:00:00.000"
+                "name": "Event 6",
+                "startDate": "2023-07-29T00:00:00",
+                "endDate": null,
+                "link": null
             },
             {
                 "club": "Renegade Miata",
                 "type": "autocross",
-                "name": "Event #7",
-                "startDate": "2023-09-09T00:00:00.000"
+                "name": "Event 7",
+                "startDate": "2023-09-09T00:00:00",
+                "endDate": null,
+                "link": null
             },
             {
                 "club": "Renegade Miata",
                 "type": "autocross",
-                "name": "Event #8",
-                "startDate": "2023-09-23T00:00:00.000"
+                "name": "Event 8",
+                "startDate": "2023-09-23T00:00:00",
+                "endDate": null,
+                "link": null
             },
             {
                 "club": "Renegade Miata",
                 "type": "autocross",
-                "name": "Event #9",
-                "startDate": "2023-10-21T00:00:00.000"
+                "name": "Event 9",
+                "startDate": "2023-10-21T00:00:00",
+                "endDate": null,
+                "link": null
             }
         ]
     },
     {
-        "club": "Mass Tuning",
+        "club": "Porsche NER",
         "events": [
             {
-                "club": "Mass Tuning",
-                "type": "trackday",
-                "name": "New Jersey Motorsports Park (Thunderbolt)",
-                "startDate": "2023-03-11T00:00:00",
-                "link": "http://www.msreg.com/trackfest1"
+                "club": "Porsche NER",
+                "type": "autocross",
+                "name": "Event 1",
+                "startDate": "2023-05-06T00:00:00",
+                "endDate": null,
+                "link": null
             },
             {
-                "club": "Mass Tuning",
-                "type": "trackday",
-                "name": "New Jersey Motorsports Park (Lightning)",
-                "startDate": "2023-03-12T00:00:00",
-                "link": "http://www.msreg.com/trackfest2"
-            },
-            {
-                "club": "Mass Tuning",
-                "type": "trackday",
-                "name": "Lime Rock Park",
-                "startDate": "2023-03-18T00:00:00",
-                "link": "http://www.msreg.com/trackfest3"
-            },
-            {
-                "club": "Mass Tuning",
-                "type": "trackday",
-                "name": "Thompson Speedway",
-                "startDate": "2023-03-24T00:00:00",
-                "link": "http://www.msreg.com/trackfest4"
-            },
-            {
-                "club": "Mass Tuning",
-                "type": "trackday",
-                "name": "Thompson Speedway",
-                "startDate": "2023-03-25T00:00:00",
-                "link": "http://www.msreg.com/trackfest5"
-            },
-            {
-                "club": "Mass Tuning",
-                "type": "trackday",
-                "name": "Palmer Motorsports Park (Counter-clockwise)",
-                "startDate": "2023-04-01T00:00:00",
-                "link": "http://www.msreg.com/trackfest6"
-            },
-            {
-                "club": "Mass Tuning",
-                "type": "trackday",
-                "name": "Palmer Motorsports Park (Clockwise)",
-                "startDate": "2023-04-02T00:00:00",
-                "link": "http://www.msreg.com/trackfest7"
-            },
-            {
-                "club": "Mass Tuning",
-                "type": "trackday",
-                "name": "Thompson Speedway",
-                "startDate": "2023-04-16T00:00:00",
-                "link": "http://www.msreg.com/trackfest8"
-            },
-            {
-                "club": "Mass Tuning",
-                "type": "trackday",
-                "name": "Thompson Speedway",
-                "startDate": "2023-04-17T00:00:00",
-                "link": "http://www.msreg.com/trackfest9"
-            },
-            {
-                "club": "Mass Tuning",
-                "type": "trackday",
-                "name": "Palmer Motorsports Park (Clockwise)",
-                "startDate": "2023-04-22T00:00:00",
-                "link": "http://www.msreg.com/trackfest10"
-            },
-            {
-                "club": "Mass Tuning",
-                "type": "trackday",
-                "name": "Palmer Motorsports Park (Counter-clockwise)",
-                "startDate": "2023-04-23T00:00:00",
-                "link": "http://www.msreg.com/trackfest11"
-            },
-            {
-                "club": "Mass Tuning",
-                "type": "trackday",
-                "name": "Canaan Motor Club (Clockwise)",
-                "startDate": "2023-04-30T00:00:00",
-                "link": "http://www.msreg.com/trackfest12"
-            },
-            {
-                "club": "Mass Tuning",
-                "type": "trackday",
-                "name": "Palmer Motorsports Park (Counter-clockwise)",
-                "startDate": "2023-05-20T00:00:00",
-                "link": "http://www.msreg.com/trackfest13"
-            },
-            {
-                "club": "Mass Tuning",
-                "type": "trackday",
-                "name": "Palmer Motorsports Park (Clockwise)",
+                "club": "Porsche NER",
+                "type": "autocross",
+                "name": "Event 2",
                 "startDate": "2023-05-21T00:00:00",
-                "link": "http://www.msreg.com/trackfest14"
+                "endDate": null,
+                "link": null
             },
             {
-                "club": "Mass Tuning",
-                "type": "trackday",
-                "name": "Thompson Speedway",
-                "startDate": "2023-06-11T00:00:00",
-                "link": "http://www.msreg.com/trackfest15"
+                "club": "Porsche NER",
+                "type": "autocross",
+                "name": "Event 3",
+                "startDate": "2023-06-18T00:00:00",
+                "endDate": null,
+                "link": null
             },
             {
-                "club": "Mass Tuning",
-                "type": "trackday",
-                "name": "Thompson Speedway",
-                "startDate": "2023-06-12T00:00:00",
-                "link": "http://www.msreg.com/trackfest16"
+                "club": "Porsche NER",
+                "type": "autocross",
+                "name": "Event 4",
+                "startDate": "2023-07-22T00:00:00",
+                "endDate": null,
+                "link": null
             },
             {
-                "club": "Mass Tuning",
-                "type": "trackday",
-                "name": "Club Motorsports",
-                "startDate": "2023-06-16T00:00:00",
-                "link": "http://msreg.com/trackfest42"
+                "club": "Porsche NER",
+                "type": "autocross",
+                "name": "Event 5",
+                "startDate": "2023-08-13T00:00:00",
+                "endDate": null,
+                "link": null
             },
             {
-                "club": "Mass Tuning",
-                "type": "trackday",
-                "name": "Club Motorsports",
-                "startDate": "2023-06-17T00:00:00",
-                "link": "http://msreg.com/trackfest43"
-            },
-            {
-                "club": "Mass Tuning",
-                "type": "trackday",
-                "name": "Canaan Motor Club (Counter-clockwise)",
-                "startDate": "2023-06-25T00:00:00",
-                "link": "http://www.msreg.com/trackfest18"
-            },
-            {
-                "club": "Mass Tuning",
-                "type": "trackday",
-                "name": "Palmer Motorsports Park (Clockwise)",
-                "startDate": "2023-07-08T00:00:00",
-                "link": "http://www.msreg.com/trackfest19"
-            },
-            {
-                "club": "Mass Tuning",
-                "type": "trackday",
-                "name": "Palmer Motorsports Park (Counter-clockwise)",
-                "startDate": "2023-07-09T00:00:00",
-                "link": "http://www.msreg.com/trackfest20"
-            },
-            {
-                "club": "Mass Tuning",
-                "type": "trackday",
-                "name": "Pineview Run (Clockwise)",
-                "startDate": "2023-07-15T00:00:00",
-                "link": "http://msreg.com/trackfest46"
-            },
-            {
-                "club": "Mass Tuning",
-                "type": "trackday",
-                "name": "Pineview Run (Counter-clockwise)",
-                "startDate": "2023-07-16T00:00:00",
-                "link": "http://msreg.com/trackfest47"
-            },
-            {
-                "club": "Mass Tuning",
-                "type": "trackday",
-                "name": "Thompson Speedway",
-                "startDate": "2023-07-30T00:00:00",
-                "link": "http://www.msreg.com/trackfest21"
-            },
-            {
-                "club": "Mass Tuning",
-                "type": "trackday",
-                "name": "Thompson Speedway",
-                "startDate": "2023-07-31T00:00:00",
-                "link": "http://www.msreg.com/trackfest22"
-            },
-            {
-                "club": "Mass Tuning",
-                "type": "trackday",
-                "name": "Canaan Motor Club (Clockwise)",
-                "startDate": "2023-08-06T00:00:00",
-                "link": "http://www.msreg.com/trackfest23"
-            },
-            {
-                "club": "Mass Tuning",
-                "type": "trackday",
-                "name": "Club Motorsports",
-                "startDate": "2023-08-11T00:00:00",
-                "link": "http://msreg.com/trackfest44"
-            },
-            {
-                "club": "Mass Tuning",
-                "type": "trackday",
-                "name": "New Hampshire Motor Speedway (South Oval)",
-                "startDate": "2023-08-26T00:00:00",
-                "link": "http://www.msreg.com/trackfest24"
-            },
-            {
-                "club": "Mass Tuning",
-                "type": "trackday",
-                "name": "Palmer Motorsports Park (Counter-clockwise)",
-                "startDate": "2023-09-16T00:00:00",
-                "link": "http://www.msreg.com/trackfest25"
-            },
-            {
-                "club": "Mass Tuning",
-                "type": "trackday",
-                "name": "Palmer Motorsports Park (Clockwise)",
-                "startDate": "2023-09-17T00:00:00",
-                "link": "http://www.msreg.com/trackfest26"
-            },
-            {
-                "club": "Mass Tuning",
-                "type": "trackday",
-                "name": "Canaan Motor Club (Counter-clockwise)",
-                "startDate": "2023-09-24T00:00:00",
-                "link": "http://www.msreg.com/trackfest27"
-            },
-            {
-                "club": "Mass Tuning",
-                "type": "trackday",
-                "name": "Thompson Speedway",
-                "startDate": "2023-10-01T00:00:00",
-                "link": "http://www.msreg.com/trackfest28"
-            },
-            {
-                "club": "Mass Tuning",
-                "type": "trackday",
-                "name": "Thompson Speedway",
-                "startDate": "2023-10-02T00:00:00",
-                "link": "http://www.msreg.com/trackfest29"
-            },
-            {
-                "club": "Mass Tuning",
-                "type": "trackday",
-                "name": "New York Safety Track (Counter-clockwise)",
-                "startDate": "2023-10-07T00:00:00",
-                "link": "http://www.msreg.com/trackfest30"
-            },
-            {
-                "club": "Mass Tuning",
-                "type": "trackday",
-                "name": "New York Safety Track (Clockwise)",
-                "startDate": "2023-10-08T00:00:00",
-                "link": "http://www.msreg.com/trackfest31"
-            },
-            {
-                "club": "Mass Tuning",
-                "type": "trackday",
-                "name": "Palmer Motorsports Park (Clockwise)",
+                "club": "Porsche NER",
+                "type": "autocross",
+                "name": "Event 6",
                 "startDate": "2023-10-14T00:00:00",
-                "link": "http://www.msreg.com/trackfest32"
+                "endDate": null,
+                "link": null
+            }
+        ]
+    },
+    {
+        "club": "Porsche NCR",
+        "events": [
+            {
+                "club": "Porsche NCR",
+                "type": "autocross",
+                "name": "Event 1",
+                "startDate": "2023-04-22T00:00:00",
+                "endDate": null,
+                "link": null
             },
             {
-                "club": "Mass Tuning",
-                "type": "trackday",
-                "name": "Palmer Motorsports Park (Counter-clockwise)",
+                "club": "Porsche NCR",
+                "type": "autocross",
+                "name": "Event 2",
+                "startDate": "2023-05-28T00:00:00",
+                "endDate": null,
+                "link": null
+            },
+            {
+                "club": "Porsche NCR",
+                "type": "autocross",
+                "name": "Event 3",
+                "startDate": "2023-07-15T00:00:00",
+                "endDate": null,
+                "link": null
+            },
+            {
+                "club": "Porsche NCR",
+                "type": "autocross",
+                "name": "Event 4",
+                "startDate": "2023-09-10T00:00:00",
+                "endDate": null,
+                "link": null
+            },
+            {
+                "club": "Porsche NCR",
+                "type": "autocross",
+                "name": "Event 5",
+                "startDate": "2023-09-30T00:00:00",
+                "endDate": null,
+                "link": null
+            }
+        ]
+    },
+    {
+        "club": "Boston BMW CCA",
+        "events": [
+            {
+                "club": "Boston BMW CCA",
+                "type": "autocross",
+                "name": "Points #1",
+                "startDate": "2023-04-09T00:00:00",
+                "endDate": null,
+                "link": "https://www.motorsportreg.com/events/boston-bmw-cca-autocross-points-event-1-devens-airfield-651676"
+            },
+            {
+                "club": "Boston BMW CCA",
+                "type": "autocross",
+                "name": "Spring School",
+                "startDate": "2023-04-30T00:00:00",
+                "endDate": null,
+                "link": null
+            },
+            {
+                "club": "Boston BMW CCA",
+                "type": "autocross",
+                "name": "Points #2",
+                "startDate": "2023-05-13T00:00:00",
+                "endDate": null,
+                "link": "https://www.motorsportreg.com/events/boston-bmw-cca-autocross-points-event-2-devens-airfield-826082"
+            },
+            {
+                "club": "Boston BMW CCA",
+                "type": "autocross",
+                "name": "Points #3",
+                "startDate": "2023-06-04T00:00:00",
+                "endDate": null,
+                "link": "https://www.motorsportreg.com/events/boston-bmw-cca-autocross-points-event-3-devens-airfield-546312"
+            },
+            {
+                "club": "Boston BMW CCA",
+                "type": "autocross",
+                "name": "Points #4",
+                "startDate": "2023-07-08T00:00:00",
+                "endDate": null,
+                "link": "https://www.motorsportreg.com/events/boston-bmw-cca-autocross-points-event-4-devens-airfield-397131"
+            },
+            {
+                "club": "Boston BMW CCA",
+                "type": "autocross",
+                "name": "TnT",
+                "startDate": "2023-07-16T00:00:00",
+                "endDate": null,
+                "link": null
+            },
+            {
+                "club": "Boston BMW CCA",
+                "type": "autocross",
+                "name": "Points #5",
+                "startDate": "2023-08-05T00:00:00",
+                "endDate": null,
+                "link": "https://www.motorsportreg.com/events/boston-bmw-cca-autocross-points-event-5-devens-airfield-193496"
+            },
+            {
+                "club": "Boston BMW CCA",
+                "type": "autocross",
+                "name": "Points #6",
+                "startDate": "2023-08-19T00:00:00",
+                "endDate": null,
+                "link": "https://www.motorsportreg.com/events/boston-bmw-cca-autocross-points-event-6-devens-airfield-088213"
+            },
+            {
+                "club": "Boston BMW CCA",
+                "type": "autocross",
+                "name": "Fall School",
+                "startDate": "2023-09-16T00:00:00",
+                "endDate": null,
+                "link": null
+            },
+            {
+                "club": "Boston BMW CCA",
+                "type": "autocross",
+                "name": "Points #7",
+                "startDate": "2023-10-01T00:00:00",
+                "endDate": null,
+                "link": "https://www.motorsportreg.com/events/boston-bmw-cca-autocross-points-event-7-devens-airfield-199818"
+            },
+            {
+                "club": "Boston BMW CCA",
+                "type": "autocross",
+                "name": "Points #8",
                 "startDate": "2023-10-15T00:00:00",
-                "link": "http://www.msreg.com/trackfest33"
-            },
-            {
-                "club": "Mass Tuning",
-                "type": "trackday",
-                "name": "Watkins Glen International (Long Course \u002B Short Course)",
-                "startDate": "2023-10-20T00:00:00",
-                "link": "http://www.msreg.com/trackfest34"
-            },
-            {
-                "club": "Mass Tuning",
-                "type": "trackday",
-                "name": "Watkins Glen International (Long Course \u002B Short Course)",
-                "startDate": "2023-10-21T00:00:00",
-                "link": "http://www.msreg.com/trackfest35"
-            },
-            {
-                "club": "Mass Tuning",
-                "type": "trackday",
-                "name": "Watkins Glen International (Long Course \u002B Short Course)",
-                "startDate": "2023-10-22T00:00:00",
-                "link": "http://www.msreg.com/trackfest36"
-            },
-            {
-                "club": "Mass Tuning",
-                "type": "trackday",
-                "name": "Thompson Speedway",
-                "startDate": "2023-10-29T00:00:00",
-                "link": "http://www.msreg.com/trackfest37"
-            },
-            {
-                "club": "Mass Tuning",
-                "type": "trackday",
-                "name": "Thompson Speedway",
-                "startDate": "2023-10-30T00:00:00",
-                "link": "http://www.msreg.com/trackfest38"
-            },
-            {
-                "club": "Mass Tuning",
-                "type": "trackday",
-                "name": "Club Motorsports",
-                "startDate": "2023-11-04T00:00:00",
-                "link": "http://msreg.com/trackfest45"
-            },
-            {
-                "club": "Mass Tuning",
-                "type": "trackday",
-                "name": "Thompson Speedway",
-                "startDate": "2023-11-10T00:00:00",
-                "link": "http://www.msreg.com/trackfest39"
-            },
-            {
-                "club": "Mass Tuning",
-                "type": "trackday",
-                "name": "Thompson Speedway",
-                "startDate": "2023-11-11T00:00:00",
-                "link": "http://www.msreg.com/trackfest40"
-            },
-            {
-                "club": "Mass Tuning",
-                "type": "trackday",
-                "name": "Lime Rock Park",
-                "startDate": "2023-11-18T00:00:00",
-                "link": "http://www.msreg.com/trackfest41"
+                "endDate": null,
+                "link": "https://www.motorsportreg.com/events/boston-bmw-cca-autocross-points-event-8-devens-airfield-141788"
             }
         ]
     },
@@ -649,15 +764,17 @@
                 "club": "ChampCar",
                 "type": "w2w",
                 "name": "Watkins Glen",
-                "startDate": "2023-05-26T00:00:00.000",
-                "endDate": "2023-05-28T00:00:00.000"
+                "startDate": "2023-05-26T00:00:00",
+                "endDate": "2023-05-28T00:00:00",
+                "link": null
             },
             {
                 "club": "ChampCar",
                 "type": "w2w",
-                "name": "Thompson",
-                "startDate": "2023-08-25T00:00:00.000",
-                "endDate": "2023-08-26T00:00:00.000"
+                "name": "Thompson Speedway",
+                "startDate": "2023-08-25T00:00:00",
+                "endDate": "2023-08-26T00:00:00",
+                "link": null
             }
         ]
     }

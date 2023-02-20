@@ -1,7 +1,7 @@
-import { useEffect } from 'react';
-import { FilterState, IEventType } from '../../common/types';
-import { useLocalStorage } from '../../hooks/useLocalStorage';
-import Tag from './Tag';
+import { useEffect } from "react";
+import { FilterState, IEventType } from "../../common/types";
+import { useLocalStorage } from "../../hooks/useLocalStorage";
+import Tag from "./Tag";
 
 export interface EventTypeFilterProps {
     eventTypes: IEventType[];
@@ -13,7 +13,7 @@ const EventTypeFilter = ({
     handleFilterChange,
 }: EventTypeFilterProps) => {
     const [filterStates, setFilterStates] = useLocalStorage<FilterState[]>(
-        'eventTypeFilters',
+        "eventTypeFilters",
         []
     );
 
@@ -53,7 +53,7 @@ const EventTypeFilter = ({
                     color={eventType.color}
                     onClick={handleToggleFilterStatus(eventType)}
                 >
-                    {eventType.typeName}
+                    {eventType.filterText}
                 </Tag>
             ))}
         </div>
