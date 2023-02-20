@@ -21,12 +21,7 @@ export interface IEventType {
     enabledColor: string;
 }
 
-export class FilterState {
+export interface FilterState {
     typeName: string;
     isEnabled: boolean;
-
-    constructor(typeName: string, isEnabled: boolean) {
-        this.typeName = typeName;
-        this.isEnabled = isEnabled;
-    }
 }
