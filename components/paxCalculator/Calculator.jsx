@@ -4,7 +4,7 @@ import { useLocalStorage } from "../../hooks/useLocalStorage";
 const Calculator = (props) => {
     const [paxValues] = useState(props.paxValues);
     const [time, setTime] = useState("");
-    const [selectedClass, setSelectedClass] = useState(
+    const [selectedClass, setSelectedClass] = useLocalStorage(
         "selectedClass",
         paxValues["Street"][0].Pax
     );
@@ -50,37 +50,31 @@ const Calculator = (props) => {
     useEffect(() => {
         timeInput.current.focus();
         timeInput.current.addEventListener("keyup", handleEnterPress);
-
-        // return () =>
-        //     timeInput.current.removeEventListener("keyup", handleEnterPress);
     }, []);
 
     return (
         <div>
-            <div className="grid grid-cols-2">
-                <div className="col-span-1">
-                    <input
-                        ref={timeInput}
-                        type="number"
-                        step=".001"
-                        placeholder="Your time"
-                        value={time}
-                        onChange={(e) => setTime(e.target.value)}
-                    />
-                </div>
-                <div className="col-span-1">
-                    <select
-                        className="ui selection dropdown"
-                        value={selectedClass}
-                        onChange={(e) => setSelectedClass(e.target.value)}
-                    >
-                        {options}
-                    </select>
-                </div>
+            <div className="grid grid-cols-2 pb-4">
+                <input
+                    className="col-span-1 py-2.5 px-2 mx-4 text-sm bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-gray-400 dark:border-gray-700 focus:outline-none focus:ring-0 focus:border-gray-200 peer"
+                    ref={timeInput}
+                    type="number"
+                    step=".001"
+                    placeholder="Your time"
+                    value={time}
+                    onChange={(e) => setTime(e.target.value)}
+                />
+                <select
+                    className="col-span-1 py-2.5 px-2 mx-4 text-sm bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-gray-400 dark:border-gray-700 focus:outline-none focus:ring-0 focus:border-gray-200 peer"
+                    value={selectedClass}
+                    onChange={(e) => setSelectedClass(e.target.value)}
+                >
+                    {options}
+                </select>
             </div>
             <div className="text-center">
                 <h3>PAX Time</h3>
-                <div className="paxed-time">{paxTime}</div>
+                <div>{paxTime}</div>
             </div>
         </div>
     );

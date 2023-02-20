@@ -50,32 +50,31 @@ const Calendar = ({ events, eventTypes }: CalendarProps) => {
     const [typesToShow, setTypesToShow] = useState<string[]>([]);
 
     const handleFilterChange = (updatedTypes: string[]) => {
+        console.log("types", updatedTypes);
         setTypesToShow(updatedTypes);
     };
 
     return (
-        <div className="  bg-slate-100 pb-20 min-h-screen">
-            <div className="lg:w-1/2 mx-auto md:w-3/4">
-                <div className="flex justify-center py-10">
-                    <Link href="/">
-                        <Image
-                            src="/images/project_devens_logo.png"
-                            alt="PROJECT.Devens Logo"
-                            width={150}
-                            height={150}
-                        />
-                    </Link>
-                </div>
-                <EventTypeFilter
-                    eventTypes={eventTypes}
-                    handleFilterChange={handleFilterChange}
-                />
-                <EventsDisplay
-                    events={events}
-                    eventTypes={eventTypes}
-                    typesToShow={typesToShow}
-                />
+        <div className="lg:w-1/2 mx-auto md:w-3/4">
+            <div className="flex justify-center py-10">
+                <Link href="/">
+                    <Image
+                        src="/images/project_devens_logo.png"
+                        alt="PROJECT.Devens Logo"
+                        width={150}
+                        height={150}
+                    />
+                </Link>
             </div>
+            <EventTypeFilter
+                eventTypes={eventTypes}
+                handleFilterChange={handleFilterChange}
+            />
+            <EventsDisplay
+                events={events}
+                eventTypes={eventTypes}
+                typesToShow={typesToShow}
+            />
         </div>
     );
 };

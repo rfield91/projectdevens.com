@@ -9,8 +9,6 @@ export async function getStaticProps() {
 
     const paxValuesJson = (await fsPromises.readFile(paxJsonPath)).toString();
 
-    console.log(paxValuesJson);
-
     return {
         props: {
             paxValuesJson: paxValuesJson,
@@ -21,7 +19,7 @@ export async function getStaticProps() {
 const Pax = ({ paxValuesJson }: any) => {
     var json = JSON.parse(paxValuesJson);
     return (
-        <div className="bg-slate-100">
+        <div className="">
             <div className="flex justify-center py-10">
                 <Link href="/">
                     <Image

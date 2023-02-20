@@ -29,17 +29,19 @@ const Output = ({ paxValues, time, selectedClass }) => {
             ).toFixed(3);
 
             classes.push(
-                <div className="class-result" key={paxClass.Name}>
-                    <div className="class-name">{paxClass.Name}</div>
-                    <div className="time">{timeToBeat}</div>
+                <div className="grid grid-cols-2 pt-1" key={paxClass.Name}>
+                    <div className="col-span-1">{paxClass.Name}</div>
+                    <div className="col-span-1 text-right">{timeToBeat}</div>
                 </div>
             );
         }
 
         categories.push(
-            <div className="bg-white m-2" key={category}>
-                <div className="font-bold text-center text-xl">{category}</div>
-                <div className="classes">{classes}</div>
+            <div className="bg-white drop-shadow-md mx-3 my-4" key={category}>
+                <div className="font-bold text-center text-xl py-2">
+                    {category}
+                </div>
+                <div className="p-2">{classes}</div>
             </div>
         );
     }

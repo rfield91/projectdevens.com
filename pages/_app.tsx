@@ -5,17 +5,15 @@ import ScrollToTop from "../components/ScrollToTop";
 
 function SoloLive({ Component, pageProps }: AppProps) {
     return (
-        <div>
-            <div>
-                <Head>
-                    <title>PROJECT.Devens</title>
-                    <link rel="icon" href="/favicon.ico" />
-                </Head>
+        <div className="bg-slate-100 pb-20 min-h-screen">
+            <Head>
+                <title>PROJECT.Devens</title>
+                <link rel="icon" href="/favicon.ico" />
+            </Head>
 
-                <Component {...pageProps} />
+            <Component {...pageProps} />
 
-                <ScrollToTop />
-            </div>
+            <ScrollToTop />
         </div>
     );
 }
