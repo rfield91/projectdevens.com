@@ -50,7 +50,6 @@ const Calendar = ({ events, eventTypes }: CalendarProps) => {
     const [typesToShow, setTypesToShow] = useState<string[]>([]);
 
     const handleFilterChange = (updatedTypes: string[]) => {
-        console.log("types", updatedTypes);
         setTypesToShow(updatedTypes);
     };
 

@@ -8,12 +8,20 @@
         "enabledColor": "bg-orange-500"
     },
     {
-        "typeName": "trackday",
-        "filterText": "Trackday",
-        "labelText": "TD",
+        "typeName": "masstuning",
+        "filterText": "MassTuning",
+        "labelText": "MT",
         "color": "blue",
         "disabledColor": "bg-blue-200",
         "enabledColor": "bg-blue-500"
+    },
+    {
+        "typeName": "tnia",
+        "filterText": "TNIA",
+        "labelText": "TN",
+        "color": "red",
+        "disabledColor": "bg-red-200",
+        "enabledColor": "bg-red-500"
     },
     {
         "typeName": "w2w",

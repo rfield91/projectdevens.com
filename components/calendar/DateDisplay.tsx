@@ -1,10 +1,14 @@
 export interface DateDisplayProps {
     startDate: Date;
-    endDate?: Date;
+    endDate?: Date | null;
 }
 
 const DateDisplay = ({ startDate, endDate }: DateDisplayProps) => {
-    if (endDate?.toString() == "Invalid Date" || endDate === undefined) {
+    if (
+        endDate == null ||
+        endDate?.toString() == "Invalid Date" ||
+        endDate === undefined
+    ) {
         return (
             <div>
                 <div>
