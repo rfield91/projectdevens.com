@@ -10,7 +10,7 @@ export interface EventDisplayProps {
 
 const EventDisplay = ({ event, eventType }: EventDisplayProps) => {
     const startDate: Date = new Date(event.startDate);
-    const endDate: Date = new Date(event.endDate);
+    const endDate: Date | null = event.endDate ? new Date(event.endDate) : null;
 
     return (
         <div className="grid grid-cols-12 my-2">

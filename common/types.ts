@@ -8,7 +8,7 @@ export interface ICalendarEvent {
     type: string;
     name: string;
     startDate: Date;
-    endDate: Date;
+    endDate: Date | null;
     link: string;
 }
 
