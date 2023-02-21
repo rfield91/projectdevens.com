@@ -4,7 +4,7 @@
         "events": [
             {
                 "club": "Mass Tuning",
-                "type": "trackday",
+                "type": "masstuning",
                 "name": "New Jersey Motorsports Park (Thunderbolt)",
                 "startDate": "2023-03-11T00:00:00",
                 "endDate": null,
@@ -12,7 +12,7 @@
             },
             {
                 "club": "Mass Tuning",
-                "type": "trackday",
+                "type": "masstuning",
                 "name": "New Jersey Motorsports Park (Lightning)",
                 "startDate": "2023-03-12T00:00:00",
                 "endDate": null,
@@ -20,7 +20,7 @@
             },
             {
                 "club": "Mass Tuning",
-                "type": "trackday",
+                "type": "masstuning",
                 "name": "Lime Rock Park",
                 "startDate": "2023-03-18T00:00:00",
                 "endDate": null,
@@ -28,7 +28,7 @@
             },
             {
                 "club": "Mass Tuning",
-                "type": "trackday",
+                "type": "masstuning",
                 "name": "Thompson Speedway",
                 "startDate": "2023-03-24T00:00:00",
                 "endDate": null,
@@ -36,7 +36,7 @@
             },
             {
                 "club": "Mass Tuning",
-                "type": "trackday",
+                "type": "masstuning",
                 "name": "Thompson Speedway",
                 "startDate": "2023-03-25T00:00:00",
                 "endDate": null,
@@ -44,7 +44,7 @@
             },
             {
                 "club": "Mass Tuning",
-                "type": "trackday",
+                "type": "masstuning",
                 "name": "Palmer Motorsports Park (Counter-clockwise)",
                 "startDate": "2023-04-01T00:00:00",
                 "endDate": null,
@@ -52,7 +52,7 @@
             },
             {
                 "club": "Mass Tuning",
-                "type": "trackday",
+                "type": "masstuning",
                 "name": "Palmer Motorsports Park (Clockwise)",
                 "startDate": "2023-04-02T00:00:00",
                 "endDate": null,
@@ -60,7 +60,7 @@
             },
             {
                 "club": "Mass Tuning",
-                "type": "trackday",
+                "type": "masstuning",
                 "name": "Thompson Speedway",
                 "startDate": "2023-04-16T00:00:00",
                 "endDate": null,
@@ -68,7 +68,7 @@
             },
             {
                 "club": "Mass Tuning",
-                "type": "trackday",
+                "type": "masstuning",
                 "name": "Thompson Speedway",
                 "startDate": "2023-04-17T00:00:00",
                 "endDate": null,
@@ -76,7 +76,7 @@
             },
             {
                 "club": "Mass Tuning",
-                "type": "trackday",
+                "type": "masstuning",
                 "name": "Palmer Motorsports Park (Clockwise)",
                 "startDate": "2023-04-22T00:00:00",
                 "endDate": null,
@@ -84,7 +84,7 @@
             },
             {
                 "club": "Mass Tuning",
-                "type": "trackday",
+                "type": "masstuning",
                 "name": "Palmer Motorsports Park (Counter-clockwise)",
                 "startDate": "2023-04-23T00:00:00",
                 "endDate": null,
@@ -92,7 +92,7 @@
             },
             {
                 "club": "Mass Tuning",
-                "type": "trackday",
+                "type": "masstuning",
                 "name": "Canaan Motor Club (Clockwise)",
                 "startDate": "2023-04-30T00:00:00",
                 "endDate": null,
@@ -100,7 +100,7 @@
             },
             {
                 "club": "Mass Tuning",
-                "type": "trackday",
+                "type": "masstuning",
                 "name": "Palmer Motorsports Park (Counter-clockwise)",
                 "startDate": "2023-05-20T00:00:00",
                 "endDate": null,
@@ -108,7 +108,7 @@
             },
             {
                 "club": "Mass Tuning",
-                "type": "trackday",
+                "type": "masstuning",
                 "name": "Palmer Motorsports Park (Clockwise)",
                 "startDate": "2023-05-21T00:00:00",
                 "endDate": null,
@@ -116,7 +116,7 @@
             },
             {
                 "club": "Mass Tuning",
-                "type": "trackday",
+                "type": "masstuning",
                 "name": "Thompson Speedway",
                 "startDate": "2023-06-11T00:00:00",
                 "endDate": null,
@@ -124,7 +124,7 @@
             },
             {
                 "club": "Mass Tuning",
-                "type": "trackday",
+                "type": "masstuning",
                 "name": "Thompson Speedway",
                 "startDate": "2023-06-12T00:00:00",
                 "endDate": null,
@@ -132,7 +132,7 @@
             },
             {
                 "club": "Mass Tuning",
-                "type": "trackday",
+                "type": "masstuning",
                 "name": "Club Motorsports",
                 "startDate": "2023-06-16T00:00:00",
                 "endDate": null,
@@ -140,7 +140,7 @@
             },
             {
                 "club": "Mass Tuning",
-                "type": "trackday",
+                "type": "masstuning",
                 "name": "Club Motorsports",
                 "startDate": "2023-06-17T00:00:00",
                 "endDate": null,
@@ -148,7 +148,7 @@
             },
             {
                 "club": "Mass Tuning",
-                "type": "trackday",
+                "type": "masstuning",
                 "name": "Canaan Motor Club (Counter-clockwise)",
                 "startDate": "2023-06-25T00:00:00",
                 "endDate": null,
@@ -156,7 +156,7 @@
             },
             {
                 "club": "Mass Tuning",
-                "type": "trackday",
+                "type": "masstuning",
                 "name": "Palmer Motorsports Park (Clockwise)",
                 "startDate": "2023-07-08T00:00:00",
                 "endDate": null,
@@ -164,7 +164,7 @@
             },
             {
                 "club": "Mass Tuning",
-                "type": "trackday",
+                "type": "masstuning",
                 "name": "Palmer Motorsports Park (Counter-clockwise)",
                 "startDate": "2023-07-09T00:00:00",
                 "endDate": null,
@@ -172,7 +172,7 @@
             },
             {
                 "club": "Mass Tuning",
-                "type": "trackday",
+                "type": "masstuning",
                 "name": "Pineview Run (Clockwise)",
                 "startDate": "2023-07-15T00:00:00",
                 "endDate": null,
@@ -180,7 +180,7 @@
             },
             {
                 "club": "Mass Tuning",
-                "type": "trackday",
+                "type": "masstuning",
                 "name": "Pineview Run (Counter-clockwise)",
                 "startDate": "2023-07-16T00:00:00",
                 "endDate": null,
@@ -188,7 +188,7 @@
             },
             {
                 "club": "Mass Tuning",
-                "type": "trackday",
+                "type": "masstuning",
                 "name": "Thompson Speedway",
                 "startDate": "2023-07-30T00:00:00",
                 "endDate": null,
@@ -196,7 +196,7 @@
             },
             {
                 "club": "Mass Tuning",
-                "type": "trackday",
+                "type": "masstuning",
                 "name": "Thompson Speedway",
                 "startDate": "2023-07-31T00:00:00",
                 "endDate": null,
@@ -204,7 +204,7 @@
             },
             {
                 "club": "Mass Tuning",
-                "type": "trackday",
+                "type": "masstuning",
                 "name": "Canaan Motor Club (Clockwise)",
                 "startDate": "2023-08-06T00:00:00",
                 "endDate": null,
@@ -212,7 +212,7 @@
             },
             {
                 "club": "Mass Tuning",
-                "type": "trackday",
+                "type": "masstuning",
                 "name": "Club Motorsports",
                 "startDate": "2023-08-11T00:00:00",
                 "endDate": null,
@@ -220,7 +220,7 @@
             },
             {
                 "club": "Mass Tuning",
-                "type": "trackday",
+                "type": "masstuning",
                 "name": "New Hampshire Motor Speedway (South Oval)",
                 "startDate": "2023-08-26T00:00:00",
                 "endDate": null,
@@ -228,7 +228,7 @@
             },
             {
                 "club": "Mass Tuning",
-                "type": "trackday",
+                "type": "masstuning",
                 "name": "Palmer Motorsports Park (Counter-clockwise)",
                 "startDate": "2023-09-16T00:00:00",
                 "endDate": null,
@@ -236,7 +236,7 @@
             },
             {
                 "club": "Mass Tuning",
-                "type": "trackday",
+                "type": "masstuning",
                 "name": "Palmer Motorsports Park (Clockwise)",
                 "startDate": "2023-09-17T00:00:00",
                 "endDate": null,
@@ -244,7 +244,7 @@
             },
             {
                 "club": "Mass Tuning",
-                "type": "trackday",
+                "type": "masstuning",
                 "name": "Canaan Motor Club (Counter-clockwise)",
                 "startDate": "2023-09-24T00:00:00",
                 "endDate": null,
@@ -252,7 +252,7 @@
             },
             {
                 "club": "Mass Tuning",
-                "type": "trackday",
+                "type": "masstuning",
                 "name": "Thompson Speedway",
                 "startDate": "2023-10-01T00:00:00",
                 "endDate": null,
@@ -260,7 +260,7 @@
             },
             {
                 "club": "Mass Tuning",
-                "type": "trackday",
+                "type": "masstuning",
                 "name": "Thompson Speedway",
                 "startDate": "2023-10-02T00:00:00",
                 "endDate": null,
@@ -268,7 +268,7 @@
             },
             {
                 "club": "Mass Tuning",
-                "type": "trackday",
+                "type": "masstuning",
                 "name": "New York Safety Track (Counter-clockwise)",
                 "startDate": "2023-10-07T00:00:00",
                 "endDate": null,
@@ -276,7 +276,7 @@
             },
             {
                 "club": "Mass Tuning",
-                "type": "trackday",
+                "type": "masstuning",
                 "name": "New York Safety Track (Clockwise)",
                 "startDate": "2023-10-08T00:00:00",
                 "endDate": null,
@@ -284,7 +284,7 @@
             },
             {
                 "club": "Mass Tuning",
-                "type": "trackday",
+                "type": "masstuning",
                 "name": "Palmer Motorsports Park (Clockwise)",
                 "startDate": "2023-10-14T00:00:00",
                 "endDate": null,
@@ -292,7 +292,7 @@
             },
             {
                 "club": "Mass Tuning",
-                "type": "trackday",
+                "type": "masstuning",
                 "name": "Palmer Motorsports Park (Counter-clockwise)",
                 "startDate": "2023-10-15T00:00:00",
                 "endDate": null,
@@ -300,7 +300,7 @@
             },
             {
                 "club": "Mass Tuning",
-                "type": "trackday",
+                "type": "masstuning",
                 "name": "Watkins Glen International (Long Course \u002B Short Course)",
                 "startDate": "2023-10-20T00:00:00",
                 "endDate": null,
@@ -308,7 +308,7 @@
             },
             {
                 "club": "Mass Tuning",
-                "type": "trackday",
+                "type": "masstuning",
                 "name": "Watkins Glen International (Long Course \u002B Short Course)",
                 "startDate": "2023-10-21T00:00:00",
                 "endDate": null,
@@ -316,7 +316,7 @@
             },
             {
                 "club": "Mass Tuning",
-                "type": "trackday",
+                "type": "masstuning",
                 "name": "Watkins Glen International (Long Course \u002B Short Course)",
                 "startDate": "2023-10-22T00:00:00",
                 "endDate": null,
@@ -324,7 +324,7 @@
             },
             {
                 "club": "Mass Tuning",
-                "type": "trackday",
+                "type": "masstuning",
                 "name": "Thompson Speedway",
                 "startDate": "2023-10-29T00:00:00",
                 "endDate": null,
@@ -332,7 +332,7 @@
             },
             {
                 "club": "Mass Tuning",
-                "type": "trackday",
+                "type": "masstuning",
                 "name": "Thompson Speedway",
                 "startDate": "2023-10-30T00:00:00",
                 "endDate": null,
@@ -340,7 +340,7 @@
             },
             {
                 "club": "Mass Tuning",
-                "type": "trackday",
+                "type": "masstuning",
                 "name": "Club Motorsports",
                 "startDate": "2023-11-04T00:00:00",
                 "endDate": null,
@@ -348,7 +348,7 @@
             },
             {
                 "club": "Mass Tuning",
-                "type": "trackday",
+                "type": "masstuning",
                 "name": "Thompson Speedway",
                 "startDate": "2023-11-10T00:00:00",
                 "endDate": null,
@@ -356,7 +356,7 @@
             },
             {
                 "club": "Mass Tuning",
-                "type": "trackday",
+                "type": "masstuning",
                 "name": "Thompson Speedway",
                 "startDate": "2023-11-11T00:00:00",
                 "endDate": null,
@@ -364,7 +364,7 @@
             },
             {
                 "club": "Mass Tuning",
-                "type": "trackday",
+                "type": "masstuning",
                 "name": "Lime Rock Park",
                 "startDate": "2023-11-18T00:00:00",
                 "endDate": null,
@@ -495,7 +495,7 @@
             {
                 "club": "Renegade Miata",
                 "type": "autocross",
-                "name": "Event 1",
+                "name": "School",
                 "startDate": "2023-04-01T00:00:00",
                 "endDate": null,
                 "link": null
@@ -503,7 +503,7 @@
             {
                 "club": "Renegade Miata",
                 "type": "autocross",
-                "name": "Event 2",
+                "name": "Event 1",
                 "startDate": "2023-04-29T00:00:00",
                 "endDate": null,
                 "link": null
@@ -511,7 +511,7 @@
             {
                 "club": "Renegade Miata",
                 "type": "autocross",
-                "name": "Event 3",
+                "name": "Event 2",
                 "startDate": "2023-05-20T00:00:00",
                 "endDate": null,
                 "link": null
@@ -519,7 +519,7 @@
             {
                 "club": "Renegade Miata",
                 "type": "autocross",
-                "name": "Event 4",
+                "name": "Event 3",
                 "startDate": "2023-06-10T00:00:00",
                 "endDate": null,
                 "link": null
@@ -527,7 +527,7 @@
             {
                 "club": "Renegade Miata",
                 "type": "autocross",
-                "name": "Event 5",
+                "name": "Event 4",
                 "startDate": "2023-07-01T00:00:00",
                 "endDate": null,
                 "link": null
@@ -535,7 +535,7 @@
             {
                 "club": "Renegade Miata",
                 "type": "autocross",
-                "name": "Event 6",
+                "name": "Event 5",
                 "startDate": "2023-07-29T00:00:00",
                 "endDate": null,
                 "link": null
@@ -543,7 +543,7 @@
             {
                 "club": "Renegade Miata",
                 "type": "autocross",
-                "name": "Event 7",
+                "name": "Event 6",
                 "startDate": "2023-09-09T00:00:00",
                 "endDate": null,
                 "link": null
@@ -551,7 +551,7 @@
             {
                 "club": "Renegade Miata",
                 "type": "autocross",
-                "name": "Event 8",
+                "name": "Event 7",
                 "startDate": "2023-09-23T00:00:00",
                 "endDate": null,
                 "link": null
@@ -559,7 +559,7 @@
             {
                 "club": "Renegade Miata",
                 "type": "autocross",
-                "name": "Event 9",
+                "name": "Event 8",
                 "startDate": "2023-10-21T00:00:00",
                 "endDate": null,
                 "link": null
@@ -775,6 +775,43 @@
                 "startDate": "2023-08-25T00:00:00",
                 "endDate": "2023-08-26T00:00:00",
                 "link": null
+            }
+        ]
+    },
+    {
+        "club": "Track Night In America",
+        "events": [
+            {
+                "club": "Track Night In America",
+                "type": "tnia",
+                "name": "Thompson Speedway",
+                "startDate": "2023-04-18T00:00:00",
+                "endDate": null,
+                "link": "https://www.tracknightinamerica.com/events/2002663-track-night-2023-thompson-speedway-motorsports-park-april-18"
+            },
+            {
+                "club": "Track Night In America",
+                "type": "tnia",
+                "name": "New Hampshire Motor Speedway",
+                "startDate": "2023-05-05T00:00:00",
+                "endDate": null,
+                "link": "https://www.tracknightinamerica.com/events/2002783-track-night-2023-new-hampshire-motor-speedway-may-5"
+            },
+            {
+                "club": "Track Night In America",
+                "type": "tnia",
+                "name": "Thompson Speedway",
+                "startDate": "2023-05-11T00:00:00",
+                "endDate": null,
+                "link": "https://www.tracknightinamerica.com/events/2002852-track-night-2023-thompson-speedway-motorsports-park-may-11"
+            },
+            {
+                "club": "Track Night In America",
+                "type": "tnia",
+                "name": "Thompson Speedway",
+                "startDate": "2023-05-24T00:00:00",
+                "endDate": null,
+                "link": "https://www.tracknightinamerica.com/events/2002905-track-night-2023-thompson-speedway-motorsports-park-may-23"
             }
         ]
     }
