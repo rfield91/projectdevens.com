@@ -10,6 +10,7 @@ module.exports = {
         "bg-blue-500",
         "bg-red-500",
         "bg-purple-500",
+        "bg-teal-500",
         "border-orange-300",
         "border-orange-500",
         "border-blue-300",
@@ -18,6 +19,8 @@ module.exports = {
         "border-red-500",
         "border-purple-300",
         "border-purple-500",
+        "border-teal-300",
+        "border-teal-500"
     ],
     theme: {
         extend: {},
