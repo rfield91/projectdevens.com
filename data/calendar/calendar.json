@@ -59,6 +59,14 @@
                 "link": "http://www.msreg.com/trackfest7"
             },
             {
+                "club": "CircuitOne",
+                "type": "co",
+                "name": "Thompson Speedway",
+                "startDate": "2023-04-07T00:00:00",
+                "endDate": null,
+                "link": "https://circuit1events.com/purchase-a-car-driving-experience/american-muscle-experience/" 
+            },
+            {
                 "club": "Mass Tuning",
                 "type": "masstuning",
                 "name": "Thompson Speedway",

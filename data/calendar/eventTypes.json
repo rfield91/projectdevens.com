@@ -30,5 +30,13 @@
         "color": "purple",
         "disabledColor": "bg-purple-200",
         "enabledColor": "bg-purple-500"
+    },
+    {
+        "typeName": "co",
+        "filterText": "CircuitOne",
+        "labelText": "CO",
+        "color": "teal",
+        "disabledColor": "bg-teal-200",
+        "enabledColor": "bg-teal-500"
     }
 ]
