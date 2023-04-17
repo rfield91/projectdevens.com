@@ -33,6 +33,13 @@ export async function getStaticProps() {
         });
     });
 
+    var now: Date = new Date();
+
+    events = events.filter((ev: ICalendarEvent) => {
+        var evStart = new Date(ev.startDate.toString());
+        return evStart >= now;
+    });
+
     return {
         props: {
             events: events,
