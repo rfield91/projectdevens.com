@@ -12,9 +12,15 @@ const EventTypeFilter = ({
     eventTypes,
     handleFilterChange,
 }: EventTypeFilterProps) => {
+    const defaultEventTypes = eventTypes.map((eventType) => {
+        return {
+            typeName: eventType.typeName,
+            isEnabled: true,
+        };
+    });
     const [filterStates, setFilterStates] = useLocalStorage<FilterState[]>(
         "eventTypeFilters",
-        []
+        defaultEventTypes
     );
 
     useEffect(() => {
