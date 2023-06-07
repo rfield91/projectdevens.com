@@ -1088,6 +1088,22 @@
                 "startDate": "2023-04-07T00:00:00",
                 "endDate": null,
                 "link": "https://circuit1events.com/purchase-a-car-driving-experience/american-muscle-experience/"
+            },
+            {
+                "club": "CircuitOne",
+                "type": "circuitone",
+                "name": "Thompson Speedway",
+                "startDate": "2023-06-25T00:00:00",
+                "endDate": null,
+                "link": "https://circuit1events.com/purchase-a-car-driving-experience/american-muscle-experience/"
+            },
+            {
+                "club": "CircuitOne",
+                "type": "circuitone",
+                "name": "Thompson Speedway",
+                "startDate": "2023-10-19T00:00:00",
+                "endDate": null,
+                "link": "https://circuit1events.com/purchase-a-car-driving-experience/american-muscle-experience/"
             }
         ]
     }
