@@ -1,0 +1,35 @@
+import { type Config } from "tailwindcss";
+
+export default {
+    content: ["./src/**/*.{js,ts,jsx,tsx}"],
+    safelist: [
+        "bg-green-500",
+        "bg-orange-500",
+        "bg-blue-500",
+        "bg-red-500",
+        "bg-purple-500",
+        "bg-teal-500",
+        "bg-green-700",
+        "bg-orange-700",
+        "bg-blue-700",
+        "bg-red-700",
+        "bg-purple-700",
+        "bg-teal-700",
+        "border-orange-300",
+        "border-orange-500",
+        "border-blue-300",
+        "border-blue-500",
+        "border-red-300",
+        "border-red-500",
+        "border-purple-300",
+        "border-purple-500",
+        "border-teal-300",
+        "border-teal-500",
+        "text-white",
+        "text-black",
+    ],
+    theme: {
+        extend: {},
+    },
+    plugins: [],
+} satisfies Config;
