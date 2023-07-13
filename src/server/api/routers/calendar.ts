@@ -1,22 +1,36 @@
-import { z } from "zod";
+import { string, z } from "zod";
 import { createTRPCRouter, protectedProcedure, publicProcedure } from "../trpc";
 
 export const calendarRouter = createTRPCRouter({
-    futureEventFeed: publicProcedure.query(async ({ ctx }) => {
-        const calendarEvents = await ctx.prisma.calendarEvent.findMany({
-            where: {
+    futureEventFeed: publicProcedure
+        .input(
+            z.object({
+                eventTypes: z.array(z.string()).optional(),
+            })
+        )
+        .query(async ({ input, ctx }) => {
+            let whereClause = {
                 startDate: {
                     gte: new Date(),
                 },
-            },
-            include: {
-                club: true,
-                calendarEventType: true,
-            },
-        });
+                eventType: {
+                    in: input.eventTypes,
+                },
+            };
 
-        return calendarEvents;
-    }),
+            const calendarEvents = await ctx.prisma.calendarEvent.findMany({
+                where: whereClause,
+                include: {
+                    club: true,
+                    calendarEventType: true,
+                },
+                orderBy: {
+                    startDate: "asc",
+                },
+            });
+
+            return calendarEvents;
+        }),
     getEvent: publicProcedure
         .input(
             z.object({

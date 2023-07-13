@@ -42,7 +42,9 @@ const CalendarAdmin = () => {
 };
 
 function CalendarAdminFeed() {
-    const events = api.calendar.futureEventFeed.useQuery();
+    const events = api.calendar.futureEventFeed.useQuery({
+        eventTypes: [],
+    });
     const eventTypes = api.calendar.eventTypes.useQuery();
 
     const deleteEvent = api.calendar.delete.useMutation({

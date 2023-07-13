@@ -6,16 +6,18 @@ import EventsDisplay from "~/components/calendar/EventsDisplay";
 import { useLocalStorage } from "~/hooks/useLocalStorage";
 
 const Calendar = () => {
-    const { data: events, isLoading: isEventDataLoading } =
-        api.calendar.futureEventFeed.useQuery();
-
-    const { data: eventTypes, isLoading: isEventTypesLoading } =
-        api.calendar.eventTypes.useQuery();
-
     const [selectedFilters, setSelectedFilters] = useLocalStorage<string[]>(
         "selectedEventTypes",
         []
     );
+
+    const { data: events, isLoading: isEventDataLoading } =
+        api.calendar.futureEventFeed.useQuery({
+            eventTypes: selectedFilters,
+        });
+
+    const { data: eventTypes, isLoading: isEventTypesLoading } =
+        api.calendar.eventTypes.useQuery();
 
     const handleFilterChange = (eventType: string, isEnabled: boolean) => {
         const currentIndex = selectedFilters.indexOf(eventType);
@@ -52,11 +54,7 @@ const Calendar = () => {
                 selectedFilters={selectedFilters}
                 handleFilterChange={handleFilterChange}
             />
-            <EventsDisplay
-                events={events}
-                eventTypes={eventTypes}
-                typesToShow={selectedFilters}
-            />
+            <EventsDisplay events={events} />
         </div>
     );
 };
