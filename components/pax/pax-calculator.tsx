@@ -1,7 +1,7 @@
 "use client";
 
 import { useLocalStorage } from "@/hooks/use-local-storage";
-import { PaxClass, PaxData } from "@/library/types/pax/types";
+import { PaxClass, PaxData } from "@/library/pax/types";
 import { useEffect, useState } from "react";
 import Calculator from "./calculator";
 import Output from "./output";

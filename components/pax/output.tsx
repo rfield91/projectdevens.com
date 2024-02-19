@@ -1,4 +1,4 @@
-import { PaxClass, PaxData } from "@/library/types/pax/types";
+import { PaxClass, PaxData } from "@/library/pax/types";
 
 type OutputProps = {
   paxData: PaxData;

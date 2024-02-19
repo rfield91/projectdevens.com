@@ -1,19 +1,12 @@
 import PaxCalculator from "@/components/pax/pax-calculator";
-import { PaxData } from "@/library/types/pax/types";
+import { getPaxData } from "@/library/pax/repository";
 
 export default async function Page() {
-  const res = await fetch(
-    "https://resultsblobstorage.blob.core.windows.net/projectdevens/pax/pax.json"
-  );
-  const data = (await res.json()) as PaxData;
-
-  // console.log(data);
-
-  const classCategories = Object.keys(data);
+  const paxData = await getPaxData();
 
   return (
     <div>
-      <PaxCalculator paxData={data} />
+      <PaxCalculator paxData={paxData} />
     </div>
   );
 }

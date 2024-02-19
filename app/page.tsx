@@ -31,12 +31,12 @@ export default function Home() {
 
   return (
     <main className="">
-      <div className="flex justify-center py-10">
-        <Image src={logo} alt="PROJECT.Devens Logo" width={450} />
+      <div className="flex py-10 w-3/4 mx-auto">
+        <Image src={logo} alt="PROJECT.Devens Logo" />
       </div>
 
       <div className="flex justify-center">
-        <ul className="flex flex-wrap">{links}</ul>
+        <ul className="flex flex-col text-center">{links}</ul>
       </div>
     </main>
   );
