@@ -4,7 +4,7 @@ export type EventType = RowDataPacket & {
   typeName: string;
   filterText: string;
   labelText: string;
-  color: string;
+  color: "orange" | "blue" | "purple";
   disabledColor: string;
   enabledColor: string;
 };
