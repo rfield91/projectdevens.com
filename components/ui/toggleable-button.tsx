@@ -1,31 +1,12 @@
-import { EventType } from "@/library/calendar/types";
 import { cn } from "@/utils/cn";
 import { VariantProps, cva } from "class-variance-authority";
 
-type TagProps = {
-  eventType: EventType;
-  enabled: boolean;
-  onClick: (key: string, isEnabled: boolean) => void;
-};
-
-const Tag = ({ eventType, enabled, onClick }: TagProps) => {
-  return (
-    <ToggleableButton
-      text={eventType.filterText}
-      enabled={enabled}
-      variant={eventType.color}
-      state={enabled ? "enabled" : "disabled"}
-      onClick={() => onClick(eventType.typeName, !enabled)}
-    />
-  );
-};
-
 const toggleableButtonVariants = cva(
-  "m-1 cursor-pointer select-none rounded-full border-2 border-solid p-2 text-center text-xs  hover:brightness-90",
+  "m-1 cursor-pointer select-none rounded-full border-2 border-solid p-2 text-center text-xs  hover:brightness-90 text-nowrap",
   {
     variants: {
       variant: {
-        default: "",
+        default: "border-slate-500 bg-slate-500",
         orange: "border-orange-500 bg-orange-500",
         blue: "border-blue-500 bg-blue-500",
         purple: "border-purple-500 bg-purple-500",
@@ -44,13 +25,13 @@ type ToggleableButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> &
     enabled: boolean;
   };
 
-const ToggleableButton = ({
+export function ToggleableButton({
   text,
   enabled,
   variant,
   state,
   ...props
-}: ToggleableButtonProps) => {
+}: ToggleableButtonProps) {
   return (
     <button
       className={cn(toggleableButtonVariants({ variant, state }))}
@@ -61,6 +42,4 @@ const ToggleableButton = ({
       {text}
     </button>
   );
-};
-
-export default Tag;
+}

@@ -1,5 +1,5 @@
 import db from "../db";
-import { Event, EventType } from "./types";
+import { Club, Event, EventType } from "./types";
 
 export async function getEventTypes() {
   const [eventTypes] = await db.query<EventType[]>(
@@ -15,6 +15,18 @@ FROM EventTypes`
   );
 
   return eventTypes;
+}
+
+export async function getClubs() {
+  const [clubs] = await db.query<Club[]>(
+    `
+SELECT
+  clubId,
+  name
+FROM Clubs`
+  );
+
+  return clubs;
 }
 
 export async function getEvents() {
