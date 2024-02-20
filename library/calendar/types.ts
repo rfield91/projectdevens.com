@@ -9,6 +9,11 @@ export type EventType = RowDataPacket & {
   enabledColor: string;
 };
 
+export type Club = RowDataPacket & {
+  clubId: string;
+  name: string;
+};
+
 export type Event = RowDataPacket & {
   id: number;
   name: string;
