@@ -48,6 +48,8 @@ INNER JOIN Clubs c
   ON e.clubId = c.clubId
 INNER JOIN EventTypes t
   ON e.eventTypeName = t.typeName
+WHERE
+    e.isDeleted = 0
 ORDER BY e.startDate, e.EndDate
     `
   );
