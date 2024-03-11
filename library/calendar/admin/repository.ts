@@ -1,45 +1,55 @@
 import { Event } from "@/library/calendar/types";
-import db from "@/library/db";
+import { sql } from "@vercel/postgres";
 
 export async function deleteEvent(eventId: number) {
-  await db.execute(
-    `
-UPDATE Events
+  await sql`
+UPDATE events
 SET
-    isDeleted = 1
+    "isDeleted" = true
 WHERE
-    id = ?`,
-    [eventId]
-  );
+    id = ${eventId}`;
+}
+
+export async function createEvent(
+  name: string,
+  eventType: string,
+  club: string,
+  startDate: Date,
+  endDate: Date,
+  link: string
+) {
+  await sql`
+INSERT INTO events
+  (name, slug, "startDate", "endDate", link, "clubId", "eventTypeName")
+VALUES
+  (${name}, ${name
+    .replace(/\s+/g, "-")
+    .toLocaleLowerCase()}, ${startDate.toISOString()}, ${endDate.toISOString()}, ${link}, ${club}, ${eventType})`;
 }
 
 export async function getEvent(eventId: number) {
-  const [events] = await db.query<Event[]>(
-    `
+  const result = await sql`
 SELECT 
   e.id,
-    e.name,
-    e.slug,
-    e.startDate,
-    e.endDate,
-    e.link,
-    c.clubId,
-    c.name as clubName,
-    t.typeName as eventTypeName,
-    t.color
+  e.name,
+  e.slug,
+  e."startDate",
+  e."endDate",
+  e.link,
+  c."clubId",
+  c.name as "clubName",
+  t."typeName" as "eventTypeName",
+  t.color
 FROM Events e
 INNER JOIN Clubs c
-  ON e.clubId = c.clubId
+ON e."clubId" = c."clubId"
 INNER JOIN EventTypes t
-  ON e.eventTypeName = t.typeName
+ON e."eventTypeName" = t."typeName"
 WHERE
-    e.isDeleted = 0
-  AND e.id = ?
-    `,
-    [eventId]
-  );
+  e."isDeleted" = false
+AND e.id = ${eventId}"`;
 
-  if (events.length == 0) return null;
+  if (result.rowCount == 0) return null;
 
-  return events[0];
+  return result.rows[0] as Event;
 }

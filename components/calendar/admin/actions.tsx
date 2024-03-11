@@ -1,16 +1,18 @@
 "use server";
 
-import { sql } from "@vercel/postgres";
+import { createEvent, deleteEvent } from "@/library/calendar/admin/repository";
 import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
 
-export async function deleteEvent(eventId: number) {
-  await sql`
-UPDATE events
-SET
-    "isDeleted" = true
-WHERE
-    id = ${eventId}`;
+export async function deleteEventAction(eventId: number) {
+  //   await sql`
+  // UPDATE events
+  // SET
+  //     "isDeleted" = true
+  // WHERE
+  //     id = ${eventId}`;
+
+  await deleteEvent(eventId);
 
   revalidatePath("/calendar/admin");
 }
@@ -19,7 +21,7 @@ export type FormState = {
   message: string;
 };
 
-export async function addEvent(
+export async function addEventAction(
   name: string,
   eventType: string,
   club: string,
@@ -27,13 +29,7 @@ export async function addEvent(
   endDate: Date,
   link: string
 ) {
-  await sql`
-INSERT INTO events
-  (name, slug, "startDate", "endDate", link, "clubId", "eventTypeName")
-VALUES
-  (${name}, ${name
-    .replace(/\s+/g, "-")
-    .toLocaleLowerCase()}, ${startDate.toISOString()}, ${endDate.toISOString()}, ${link}, ${club}, ${eventType})`;
+  await createEvent(name, eventType, club, startDate, endDate, link);
 
   revalidatePath("/calendar/admin");
 

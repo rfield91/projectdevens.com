@@ -31,7 +31,7 @@ import { CalendarIcon } from "lucide-react";
 import Link from "next/link";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
-import { addEvent } from "./actions";
+import { addEventAction } from "./actions";
 
 type AddEventFormProps = {
   eventTypes: EventType[];
@@ -53,7 +53,7 @@ export function AddEventForm({ eventTypes, clubs }: AddEventFormProps) {
 
   const handleSubmit = async (values: z.infer<typeof eventFormSchema>) => {
     console.log(values);
-    await addEvent(
+    await addEventAction(
       values.eventName,
       values.eventType,
       values.club,
