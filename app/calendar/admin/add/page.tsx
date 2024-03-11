@@ -6,7 +6,7 @@ export default async function Page() {
   const clubs = await getClubs();
 
   return (
-    <div className="mx-auto w-3/4 mt-5">
+    <div className="mx-auto w-1/2 mt-5">
       <AddEventForm eventTypes={eventTypes} clubs={clubs} />
     </div>
   );
