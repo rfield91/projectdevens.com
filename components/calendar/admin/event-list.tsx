@@ -1,5 +1,6 @@
 "use client";
 
+import { Button } from "@/components/ui/button";
 import {
   Table,
   TableBody,
@@ -9,7 +10,12 @@ import {
   TableRow,
 } from "@/components/ui/table";
 import { Event, EventType } from "@/library/calendar/types";
+import { format } from "date-fns";
+import Link from "next/link";
 import { useRouter } from "next/navigation";
+import { FaPencil } from "react-icons/fa6";
+import { deleteEvent } from "./actions";
+import { DeleteEventButton } from "./delete-event-button";
 
 type EventListProps = {
   events: Event[];
@@ -49,15 +55,20 @@ export function EventList({ events, eventTypes }: EventListProps) {
                   {et.filterText}
                 </div>
               </TableCell>
-              <TableCell>{ev.startDate.toISOString()}</TableCell>
-              <TableCell>
-                {/* <DeleteEventButton
+              <TableCell>{format(ev.startDate, "MMMM d, yyyy")}</TableCell>
+              <TableCell className="flex gap-2">
+                <Button asChild>
+                  <Link href={`/calendar/admin/edit/${ev.id}`}>
+                    <FaPencil />
+                  </Link>
+                </Button>
+                <DeleteEventButton
                   eventId={ev.id}
                   onClick={async () => {
-                    await handleDeleteEvent(ev.id);
+                    await deleteEvent(ev.id);
                     router.refresh();
                   }}
-                /> */}
+                />
               </TableCell>
             </TableRow>
           );

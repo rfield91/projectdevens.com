@@ -4,7 +4,7 @@ import mysql, { ConnectionOptions } from "mysql2/promise";
 import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
 
-export async function handleDeleteEvent(eventId: number) {
+export async function deleteEvent(eventId: number) {
   const config: ConnectionOptions = {
     uri: process.env.DATABASE_URL,
     decimalNumbers: true,
@@ -25,16 +25,18 @@ export async function handleDeleteEvent(eventId: number) {
   revalidatePath("/calendar/admin");
 }
 
-export async function addEvent(prevState: any, formData: FormData) {
-  const rawFormData = {
-    name: formData.get("event-name")?.toString(),
-    eventType: formData.get("event-type"),
-    clubId: formData.get("club"),
-    startDate: formData.get("start-date"),
-    endDate: formData.get("end-date"),
-    link: formData.get("link"),
-  };
+export type FormState = {
+  message: string;
+};
 
+export async function addEvent(
+  name: string,
+  eventType: string,
+  club: string,
+  startDate: Date,
+  endDate: Date,
+  link: string
+) {
   const config: ConnectionOptions = {
     uri: process.env.DATABASE_URL,
     decimalNumbers: true,
@@ -49,15 +51,17 @@ export async function addEvent(prevState: any, formData: FormData) {
     VALUES
       (?, ?, ?, ?, ?, ?, ?)`,
     [
-      rawFormData.name,
-      `${rawFormData.name?.replace(/\s+/g, "-").toLocaleLowerCase()}`,
-      rawFormData.startDate,
-      rawFormData.endDate,
-      rawFormData.link,
-      rawFormData.clubId,
-      rawFormData.eventType,
+      name,
+      `${name.replace(/\s+/g, "-").toLocaleLowerCase()}`,
+      startDate,
+      endDate,
+      link,
+      club,
+      eventType,
     ]
   );
+
+  revalidatePath("/calendar/admin");
 
   redirect("/calendar/admin");
 }
