@@ -1,26 +1,16 @@
 "use server";
 
-import mysql, { ConnectionOptions } from "mysql2/promise";
+import { sql } from "@vercel/postgres";
 import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
 
 export async function deleteEvent(eventId: number) {
-  const config: ConnectionOptions = {
-    uri: process.env.DATABASE_URL,
-    decimalNumbers: true,
-  };
-
-  const db = await mysql.createConnection(config);
-
-  await db.execute(
-    `
-    UPDATE Events
-    SET
-        isDeleted = 1
-    WHERE
-        id = ?`,
-    [eventId]
-  );
+  await sql`
+UPDATE events
+SET
+    "isDeleted" = true
+WHERE
+    id = ${eventId}`;
 
   revalidatePath("/calendar/admin");
 }
@@ -37,29 +27,13 @@ export async function addEvent(
   endDate: Date,
   link: string
 ) {
-  const config: ConnectionOptions = {
-    uri: process.env.DATABASE_URL,
-    decimalNumbers: true,
-  };
-
-  const db = await mysql.createConnection(config);
-
-  await db.execute(
-    `
-    INSERT INTO Events
-      (name, slug, startDate, endDate, link, clubId, eventTypeName)
-    VALUES
-      (?, ?, ?, ?, ?, ?, ?)`,
-    [
-      name,
-      `${name.replace(/\s+/g, "-").toLocaleLowerCase()}`,
-      startDate,
-      endDate,
-      link,
-      club,
-      eventType,
-    ]
-  );
+  await sql`
+INSERT INTO events
+  (name, slug, "startDate", "endDate", link, "clubId", "eventTypeName")
+VALUES
+  (${name}, ${name
+    .replace(/\s+/g, "-")
+    .toLocaleLowerCase()}, ${startDate.toISOString()}, ${endDate.toISOString()}, ${link}, ${club}, ${eventType})`;
 
   revalidatePath("/calendar/admin");
 

@@ -1,58 +1,52 @@
-import db from "../db";
+import { sql } from "@vercel/postgres";
 import { Club, Event, EventType } from "./types";
 
 export async function getEventTypes() {
-  const [eventTypes] = await db.query<EventType[]>(
-    `
+  const result = await sql`
 SELECT
-    typeName,
-    filterText,
-    labelText,
-    color,
-    disabledColor,
-    enabledColor
-FROM EventTypes`
-  );
+  "typeName",
+  "filterText",
+  "labelText",
+  color,
+  "disabledColor",
+  "enabledColor"
+FROM eventtypes`;
 
-  return eventTypes;
+  return result.rows as EventType[];
 }
 
 export async function getClubs() {
-  const [clubs] = await db.query<Club[]>(
-    `
+  const result = await sql`
 SELECT
-  clubId,
-  name
-FROM Clubs`
-  );
+  "clubId",
+  "name"
+FROM Clubs`;
 
-  return clubs;
+  return result.rows as Club[];
 }
 
 export async function getEvents() {
-  const [events] = await db.query<Event[]>(
-    `
+  const result = await sql`
 SELECT 
   e.id,
-    e.name,
-    e.slug,
-    e.startDate,
-    e.endDate,
-    e.link,
-    c.clubId,
-    c.name as clubName,
-    t.typeName as eventTypeName,
-    t.color
+  e.name,
+  e.slug,
+  e."startDate",
+  e."endDate",
+  e.link,
+  c."clubId",
+  c.name as "clubName",
+  t."typeName" as "eventTypeName",
+  t.color
 FROM Events e
 INNER JOIN Clubs c
-  ON e.clubId = c.clubId
+ON e."clubId" = c."clubId"
 INNER JOIN EventTypes t
-  ON e.eventTypeName = t.typeName
+ON e."eventTypeName" = t."typeName"
 WHERE
-    e.isDeleted = 0
-ORDER BY e.startDate, e.EndDate
-    `
-  );
+  e."isDeleted" = false
+ORDER BY e."startDate", e."endDate"
+    `;
 
-  return events;
+  return result.rows as Event[];
 }
