@@ -6,7 +6,7 @@ import {
 } from "@/library/calendar/repository";
 import { cache } from "react";
 
-export const getData = cache(async () => {
+const getData = cache(async () => {
   return {
     eventTypes: await getEventTypes(),
     clubs: await getClubs(),
