@@ -14,7 +14,7 @@ import { format } from "date-fns";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { FaPencil } from "react-icons/fa6";
-import { deleteEvent } from "./actions";
+import { deleteEventAction } from "./actions";
 import { DeleteEventButton } from "./delete-event-button";
 
 type EventListProps = {
@@ -65,7 +65,7 @@ export function EventList({ events, eventTypes }: EventListProps) {
                 <DeleteEventButton
                   eventId={ev.id}
                   onClick={async () => {
-                    await deleteEvent(ev.id);
+                    await deleteEventAction(ev.id);
                     router.refresh();
                   }}
                 />

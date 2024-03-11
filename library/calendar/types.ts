@@ -1,6 +1,4 @@
-import { RowDataPacket } from "mysql2";
-
-export type EventType = RowDataPacket & {
+export type EventType = {
   typeName: string;
   filterText: string;
   labelText: string;
@@ -9,12 +7,12 @@ export type EventType = RowDataPacket & {
   enabledColor: string;
 };
 
-export type Club = RowDataPacket & {
+export type Club = {
   clubId: string;
   name: string;
 };
 
-export type Event = RowDataPacket & {
+export type Event = {
   id: number;
   name: string;
   slug: string;
