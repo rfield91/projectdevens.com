@@ -21,9 +21,14 @@ export default async function Page({
   const events = await getEventsByClub(club.clubId);
 
   return (
-    <div className="flex flex-col items-center gap-10 py-10">
+    <div className="mx-auto md:w-3/4 lg:w-1/2 mb-52">
       <Link href="/calendar">
-        <Image src={logo} alt="PROJECT.Devens Logo" width={250} />
+        <Image
+          src={logo}
+          alt="PROJECT.Devens Logo"
+          width={250}
+          className="mx-auto my-10"
+        />
       </Link>
       {events && <EventList events={events} />}
       {!events && <div>This club does not have any upcoming events.</div>}
