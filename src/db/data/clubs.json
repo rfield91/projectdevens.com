@@ -1,0 +1,42 @@
+[
+  {
+    "slug": "ne-svt",
+    "name": "NE-SVT"
+  },
+  {
+    "slug": "boston-bmwcca",
+    "name": "Boston BMW CCA"
+  },
+  {
+    "slug": "champcar",
+    "name": "ChampCar Endurance Series"
+  },
+  {
+    "slug": "mass-tuning",
+    "name": "Mass Tuning"
+  },
+  {
+    "slug": "ner-scca",
+    "name": "NER SCCA"
+  },
+  {
+    "slug": "porsche-ner",
+    "name": "Porsche NER"
+  },
+  {
+    "slug": "porsche-ncr",
+    "name": "Porsche NCR"
+  },
+  {
+    "slug": "renegade-miata",
+    "name": "Renegade Miata"
+  },
+  {
+    "slug": "scca",
+    "name": "SCCA"
+  },
+  {
+    "slug": "comscc",
+    "name": "COMSCC"
+  }
+]

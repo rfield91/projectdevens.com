@@ -1,0 +1,204 @@
+[
+  {
+    "type": "autocross",
+    "club": "ne-svt",
+    "startsAt": "2025-04-12T07:00:00-04:00",
+    "endsAt": "2025-04-12T17:00:00-04:00",
+    "slug": "event-1",
+    "title": "Event 1"
+  },
+  {
+    "type": "autocross",
+    "club": "ne-svt",
+    "startsAt": "2025-04-19T07:00:00-04:00",
+    "endsAt": "2025-04-19T17:00:00-04:00",
+    "slug": "event-2",
+    "title": "Event 2"
+  },
+  {
+    "type": "autocross",
+    "club": "ne-svt",
+    "startsAt": "2025-04-20T07:00:00-04:00",
+    "endsAt": "2025-04-20T17:00:00-04:00",
+    "slug": "event-3",
+    "title": "Event 3"
+  },
+  {
+    "type": "autocross",
+    "club": "ne-svt",
+    "startsAt": "2025-05-17T07:00:00-04:00",
+    "endsAt": "2025-05-17T17:00:00-04:00",
+    "slug": "event-4",
+    "title": "Event 4"
+  },
+  {
+    "type": "autocross",
+    "club": "ne-svt",
+    "startsAt": "2025-06-01T07:00:00-04:00",
+    "endsAt": "2025-06-01T17:00:00-04:00",
+    "slug": "event-5",
+    "title": "Event 5"
+  },
+  {
+    "type": "autocross",
+    "club": "ne-svt",
+    "startsAt": "2025-06-15T07:00:00-04:00",
+    "endsAt": "2025-06-15T17:00:00-04:00",
+    "slug": "event-6",
+    "title": "Event 6"
+  },
+  {
+    "type": "autocross",
+    "club": "ne-svt",
+    "startsAt": "2025-06-28T07:00:00-04:00",
+    "endsAt": "2025-06-28T17:00:00-04:00",
+    "slug": "event-7",
+    "title": "Event 7"
+  },
+  {
+    "type": "autocross",
+    "club": "ne-svt",
+    "startsAt": "2025-07-06T07:00:00-04:00",
+    "endsAt": "2025-07-06T17:00:00-04:00",
+    "slug": "event-8",
+    "title": "Event 8"
+  },
+  {
+    "type": "autocross",
+    "club": "ne-svt",
+    "startsAt": "2025-07-12T07:00:00-04:00",
+    "endsAt": "2025-07-12T17:00:00-04:00",
+    "slug": "event-9",
+    "title": "Event 9"
+  },
+  {
+    "type": "autocross",
+    "club": "ne-svt",
+    "startsAt": "2025-07-27T07:00:00-04:00",
+    "endsAt": "2025-07-27T17:00:00-04:00",
+    "slug": "event-10",
+    "title": "Event 10"
+  },
+  {
+    "type": "autocross",
+    "club": "ne-svt",
+    "startsAt": "2025-08-09T07:00:00-04:00",
+    "endsAt": "2025-08-09T17:00:00-04:00",
+    "slug": "event-11",
+    "title": "Event 11"
+  },
+  {
+    "type": "autocross",
+    "club": "ne-svt",
+    "startsAt": "2025-09-06T07:00:00-04:00",
+    "endsAt": "2025-09-06T17:00:00-04:00",
+    "slug": "event-12",
+    "title": "Event 12"
+  },
+  {
+    "type": "autocross",
+    "club": "ne-svt",
+    "startsAt": "2025-09-14T07:00:00-04:00",
+    "endsAt": "2025-09-14T17:00:00-04:00",
+    "slug": "event-13",
+    "title": "Event 13"
+  },
+  {
+    "type": "autocross",
+    "club": "ne-svt",
+    "startsAt": "2025-10-05T07:00:00-04:00",
+    "endsAt": "2025-10-05T17:00:00-04:00",
+    "slug": "event-14",
+    "title": "Event 14"
+  },
+  {
+    "type": "autocross",
+    "club": "ne-svt",
+    "startsAt": "2025-10-25T07:00:00-04:00",
+    "endsAt": "2025-10-25T17:00:00-04:00",
+    "slug": "event-15",
+    "title": "Event 15"
+  },
+  {
+    "type": "autocross",
+    "club": "ne-svt",
+    "startsAt": "2025-11-01T07:00:00-04:00",
+    "endsAt": "2025-11-01T17:00:00-04:00",
+    "slug": "event-16",
+    "title": "Event 16"
+  },
+  {
+    "type": "autocross",
+    "club": "boston-bmwcca",
+    "startsAt": "2025-02-22T18:00:00-04:00",
+    "endsAt": "2025-02-22T23:00:00-04:00",
+    "slug": "banquet-and-autocross-awards-party",
+    "title": "Banquet and Autocross Awards Party",
+    "link": "https://www.motorsportreg.com/events/boston-bmw-cca-banquet-autocross-awards-party-craft-food-halls-607298"
+  },
+  {
+    "type": "autocross",
+    "club": "boston-bmwcca",
+    "startsAt": "2025-04-06T07:00:00-04:00",
+    "endsAt": "2025-04-06T17:00:00-04:00",
+    "slug": "points-1",
+    "title": "Points 1"
+  },
+  {
+    "type": "autocross",
+    "club": "boston-bmwcca",
+    "startsAt": "2025-05-04T07:00:00-04:00",
+    "endsAt": "2025-05-04T17:00:00-04:00",
+    "slug": "spring-novice-school",
+    "title": "Spring Novice School"
+  },
+  {
+    "type": "autocross",
+    "club": "boston-bmwcca",
+    "startsAt": "2025-06-08T07:00:00-04:00",
+    "endsAt": "2025-06-08T17:00:00-04:00",
+    "slug": "points-2",
+    "title": "Points 2"
+  },
+  {
+    "type": "autocross",
+    "club": "boston-bmwcca",
+    "startsAt": "2025-06-22T07:00:00-04:00",
+    "endsAt": "2025-06-22T17:00:00-04:00",
+    "slug": "points-3",
+    "title": "Points 3"
+  },
+  {
+    "type": "autocross",
+    "club": "porsche-ncr",
+    "startsAt": "2025-02-02T17:00:00-04:00",
+    "endsAt": "2025-02-02T21:00:00-04:00",
+    "slug": "season-autocross-awards-party",
+    "title": "Season Autocross Awards Party",
+    "link": "https://www.motorsportreg.com/events/ncr-ner-2024-season-autocross-awards-party-billiards-cafe-pca-north-country-541754"
+  },
+  {
+    "type": "trackday",
+    "club": "mass-tuning",
+    "startsAt": "2025-03-07T07:00:00-04:00",
+    "endsAt": "2025-03-07T17:00:00-04:00",
+    "slug": "njmp-lightning",
+    "title": "NJMP Lightning"
+  },
+  {
+    "type": "trackday",
+    "club": "mass-tuning",
+    "startsAt": "2025-03-08T07:00:00-04:00",
+    "endsAt": "2025-03-08T17:00:00-04:00",
+    "slug": "njmp-thunderbolt",
+    "title": "NJMP Thunderbolt"
+  },
+  {
+    "type": "trackday",
+    "club": "scca",
+    "startsAt": "2025-04-17T14:00:00-04:00",
+    "endsAt": "2025-04-17T20:00:00-04:00",
+    "slug": "Lime Rock",
+    "title": "Lime Rock"
+  }
+]
