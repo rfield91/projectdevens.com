@@ -4,9 +4,10 @@ import Link from "next/link";
 
 type EventItemProps = {
   event: Event;
+  showClubName: boolean;
 };
 
-export const EventItem = ({ event }: EventItemProps) => {
+export const EventItem = ({ event, showClubName = true }: EventItemProps) => {
   return (
     <div className="grid grid-cols-[40%_1fr] md:grid-cols-[25%_1fr] gap-4">
       <div className="md:border-l-2 border-r-2 border-red-700 py-4 flex flex-col items-center gap-1">
@@ -21,13 +22,19 @@ export const EventItem = ({ event }: EventItemProps) => {
         </div>
       </div>
       <div className="flex flex-col gap-2 py-4">
-        <div className="flex flex-col items-start md:flex-row md:items-center gap-4">
-          <div className="text-xl md:text-3xl">
-            <Link href={`/calendar/club/${event.club.slug}`}>
-              {event.club.name}
-            </Link>
+        {showClubName && (
+          <div className="flex flex-col items-start md:flex-row md:items-center gap-4">
+            <div className="text-xl md:text-3xl">
+              <Link
+                href={`/calendar/club/${event.club.slug}`}
+                className="hover:text-zinc-300"
+                title="View more events held by this club"
+              >
+                {event.club.name}
+              </Link>
+            </div>
           </div>
-        </div>
+        )}
         <div className="text-xl md:text-2">{event.title}</div>
         <div className="">
           {event.url && (

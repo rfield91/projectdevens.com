@@ -1,5 +1,6 @@
 import { db } from "@/db";
 import { clubsTable, eventsTable, typesTable } from "@/db/schema";
+import { format } from "date-fns";
 import { config } from "dotenv";
 async function main() {
   config({ path: ".env" }); // or .env.local
@@ -20,15 +21,21 @@ async function main() {
     .values(seedClubData)
     .returning();
 
-  const events = seedEventData.map((ev) => ({
-    clubId: insertedClubs.find((c) => c.slug == ev.club)?.clubId || "",
-    typeId: insertedTypes.find((t) => t.slug == ev.type)?.typeId || "",
-    startsAt: new Date(ev.startsAt),
-    endsAt: new Date(ev.endsAt),
-    slug: ev.slug,
-    title: ev.title,
-    url: ev.link,
-  }));
+  const events = seedEventData.map((ev) => {
+    const startsAt = new Date(ev.startsAt);
+    const endsAt = new Date(ev.endsAt);
+    const title = ev.title;
+
+    return {
+      clubId: insertedClubs.find((c) => c.slug == ev.club)?.clubId || "",
+      typeId: insertedTypes.find((t) => t.slug == ev.type)?.typeId || "",
+      startsAt: startsAt,
+      endsAt: endsAt,
+      slug: `${format(startsAt, "yyyy-MM-dd")}-${title.replace(" ", "-")}`,
+      title: title,
+      url: ev.link,
+    };
+  });
 
   await db.insert(eventsTable).values(events);
 }

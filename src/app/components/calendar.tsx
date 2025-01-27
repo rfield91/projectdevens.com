@@ -33,7 +33,7 @@ export const Calendar = ({ clubs, eventTypes, events }: CalendarProps) => {
         filters={filters}
         handleFilterChange={(newFilterData) => setFilters(newFilterData)}
       />
-      <EventList events={filteredEvents} />
+      <EventList events={filteredEvents} showClubName={true} />
     </div>
   );
 };

@@ -30,8 +30,11 @@ export default async function Page({
           className="mx-auto my-10"
         />
       </Link>
-      {events && <EventList events={events} />}
-      {!events && <div>This club does not have any upcoming events.</div>}
+      <div className="flex flex-col gap-4">
+        <h1 className="text-center text-5xl">{club.name}</h1>
+        {events && <EventList events={events} showClubName={false} />}
+        {!events && <div>This club does not have any upcoming events.</div>}
+      </div>
     </div>
   );
 }

@@ -1,28 +1,10 @@
-export type Club = {
-  clubId: string;
-  name: string;
-  slug: string;
-};
+import { InferResultType } from "@/db/helpers";
 
-export type EventType = {
-  typeId: string;
-  name: string;
-  slug: string;
-};
+export type Club = InferResultType<"clubsTable">;
 
-export type Event = {
-  eventId: string;
-  typeId: string;
-  clubId: string;
-  startsAt: Date;
-  endsAt: Date;
-  slug: string;
-  url: string | null;
-  title: string;
-  description: string | null;
-  club: Club;
-  type: EventType;
-};
+export type EventType = InferResultType<"typesTable">;
+
+export type Event = InferResultType<"eventsTable", { club: true; type: true }>;
 
 export type Filters = {
   excludedEventTypes: string[];

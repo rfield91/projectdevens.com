@@ -1,4 +1,5 @@
 import { FilterList } from "@/app/components/filter-list/filter-list";
+import { FilterListItemDetails } from "@/app/components/filter-list/types";
 import { Club, EventType, Filters } from "@/types/calendar";
 
 type EventFilterProps = {
@@ -14,6 +15,24 @@ export const EventFilter = ({
   filters,
   handleFilterChange,
 }: EventFilterProps) => {
+  function updateFilterList(
+    item: FilterListItemDetails,
+    currentList: string[],
+    completeList: string[]
+  ) {
+    let updatedList: string[] = [];
+
+    if (currentList.length === 0) {
+      updatedList = completeList.filter((t) => t != item.id);
+    } else {
+      updatedList = item.enabled
+        ? currentList.filter((t) => t != item.id)
+        : [...currentList, item.id];
+    }
+
+    return updatedList;
+  }
+
   return (
     <div className="flex flex-col gap-4">
       <h3 className="text-center text-xl font-bold">Format</h3>
@@ -23,18 +42,14 @@ export const EventFilter = ({
           name: eventType.name,
           enabled: !filters.excludedEventTypes.includes(eventType.typeId),
         }))}
-        onSelectedItemChange={(item: {
-          id: string;
-          name: string;
-          enabled: boolean;
-        }) => {
-          const updatedFilters = item.enabled
-            ? filters.excludedEventTypes.filter((e) => e != item.id)
-            : [...filters.excludedEventTypes, item.id];
-
+        onSelectedItemChange={(item: FilterListItemDetails) => {
           handleFilterChange({
             ...filters,
-            excludedEventTypes: updatedFilters,
+            excludedEventTypes: updateFilterList(
+              item,
+              filters.excludedEventTypes,
+              eventTypes.map((t) => t.typeId)
+            ),
           });
         }}
       />
@@ -45,21 +60,33 @@ export const EventFilter = ({
           name: club.name,
           enabled: !filters.excludedClubs.includes(club.clubId),
         }))}
-        onSelectedItemChange={(item: {
-          id: string;
-          name: string;
-          enabled: boolean;
-        }) => {
-          const updatedFilters = item.enabled
-            ? filters.excludedClubs.filter((c) => c != item.id)
-            : [...filters.excludedClubs, item.id];
-
+        onSelectedItemChange={(item: FilterListItemDetails) => {
           handleFilterChange({
             ...filters,
-            excludedClubs: updatedFilters,
+            excludedClubs: updateFilterList(
+              item,
+              filters.excludedClubs,
+              clubs.map((t) => t.clubId)
+            ),
           });
         }}
       />
+      {(filters.excludedClubs.length != 0 ||
+        filters.excludedEventTypes.length != 0) && (
+        <div className="text-center">
+          <button
+            className="bg-zinc-300 text-zinc-800 p-1.5 text-xs rounded-full tracking-wider hover:bg-zinc-400"
+            onClick={() =>
+              handleFilterChange({
+                excludedClubs: [],
+                excludedEventTypes: [],
+              })
+            }
+          >
+            Reset Filters
+          </button>
+        </div>
+      )}
     </div>
   );
 };
