@@ -2,7 +2,7 @@ import { cn } from "@/utils/cn";
 import { cva, VariantProps } from "class-variance-authority";
 
 const toggleableButtonVariants = cva(
-  "text-nowrap border-2 cursor-pointer text-black select-none tracking-wider rounded-full shadow-lg font-bold p-1.5 text-center text-xs",
+  "text-nowrap border-2 cursor-pointer text-black select-none tracking-wider rounded-full shadow-lg font-bold p-1.5 text-center text-xs transition-all ease-in-out",
   {
     variants: {
       variant: {

@@ -27,7 +27,7 @@ export const EventItem = ({ event, showClubName = true }: EventItemProps) => {
             <div className="text-xl md:text-3xl">
               <Link
                 href={`/calendar/club/${event.club.slug}`}
-                className="hover:text-zinc-300"
+                className="hover:text-zinc-300 transition-all ease-in-out"
                 title="View more events held by this club"
               >
                 {event.club.name}

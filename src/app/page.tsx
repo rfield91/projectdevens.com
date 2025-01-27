@@ -9,18 +9,18 @@ export default function Home() {
       name: "Calendar",
       link: "/calendar",
     },
-    {
-      key: "paxCalculator",
-      name: "PAX Calculator",
-      link: "/pax",
-    },
+    // {
+    //   key: "paxCalculator",
+    //   name: "PAX Calculator",
+    //   link: "/pax",
+    // },
   ];
 
   const links = pages.map((page) => {
     return (
       <li className="mx-6 mt-2" key={page.key}>
         <Link
-          className="text-xl inline-block p-2 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
+          className="text-zinc-400 text-xl inline-block p-2 rounded-t-lg border-b-2 border-transparent hover:text-zinc-400 hover:border-zinc-400 transition-all ease-in-out"
           href={page.link}
         >
           {page.name}
