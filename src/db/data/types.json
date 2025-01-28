@@ -1,0 +1,22 @@
+[
+  {
+    "slug": "autocross",
+    "name": "Autocross",
+    "color": "orange"
+  },
+  {
+    "slug": "trackday",
+    "name": "Track Day",
+    "color": "blue"
+  },
+  {
+    "slug": "timetrial",
+    "name": "Time Trial",
+    "color": "yellow"
+  },
+  {
+    "slug": "w2w",
+    "name": "Wheel to Wheel",
+    "color": "purple"
+  }
+]
