@@ -30,6 +30,10 @@ export const EventFilter = ({
         : [...currentList, item.id];
     }
 
+    if (updatedList.length === completeList.length) {
+      updatedList = [];
+    }
+
     return updatedList;
   }
 

@@ -2,12 +2,13 @@ import { db } from "@/db";
 import { clubsTable, eventsTable, typesTable } from "@/db/schema";
 import { format } from "date-fns";
 import { config } from "dotenv";
+import * as fs from "fs/promises";
+
 async function main() {
   config({ path: ".env" }); // or .env.local
 
   const { default: seedTypeData } = await import("@/db/data/types.json");
   const { default: seedClubData } = await import("@/db/data/clubs.json");
-  const { default: seedEventData } = await import("@/db/data/events.json");
 
   await db.delete(typesTable);
   await db.delete(clubsTable);
@@ -21,21 +22,32 @@ async function main() {
     .values(seedClubData)
     .returning();
 
-  const events = seedEventData.map((ev) => {
-    const startsAt = new Date(ev.startsAt);
-    const endsAt = new Date(ev.endsAt);
-    const title = ev.title;
+  const eventData = await fs.readFile("./src/db/data/events.tsv");
 
-    return {
-      clubId: insertedClubs.find((c) => c.slug == ev.club)?.clubId || "",
-      typeId: insertedTypes.find((t) => t.slug == ev.type)?.typeId || "",
-      startsAt: startsAt,
-      endsAt: endsAt,
-      slug: `${format(startsAt, "yyyy-MM-dd")}-${title.replace(" ", "-")}`,
-      title: title,
-      url: ev.link,
-    };
-  });
+  const rows = eventData.toString().split("\r\n");
+
+  const events = rows
+    .map((row, i) => {
+      if (i == 0) return null;
+
+      const [club, type, , startsAtString, endsAtString, title, link] =
+        row.split("\t");
+
+      const cleanedTitle = title.trim();
+      const startsAt = new Date(startsAtString);
+      const endsAt = new Date(endsAtString);
+
+      return {
+        clubId: insertedClubs.find((c) => c.slug == club)?.clubId || "",
+        typeId: insertedTypes.find((t) => t.slug == type)?.typeId || "",
+        startsAt: startsAt,
+        endsAt: endsAt,
+        slug: `${format(startsAt, "yyyy-MM-dd")}-${title.replace(" ", "-")}`,
+        title: cleanedTitle,
+        url: link.length === 0 ? undefined : link,
+      };
+    })
+    .filter((ev) => ev != null);
 
   await db.insert(eventsTable).values(events);
 }

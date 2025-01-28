@@ -2,8 +2,9 @@
 
 import { EventFilter } from "@/app/components/event-filter";
 import { EventList } from "@/app/components/events-list";
+import { useLocalStorage } from "@/hooks/use-local-storage";
 import { Club, Event, EventType, Filters } from "@/types/calendar";
-import { useMemo, useState } from "react";
+import { useMemo } from "react";
 
 type CalendarProps = {
   clubs: Club[];
@@ -12,10 +13,13 @@ type CalendarProps = {
 };
 
 export const Calendar = ({ clubs, eventTypes, events }: CalendarProps) => {
-  const [filters, setFilters] = useState<Filters>({
-    excludedEventTypes: [],
-    excludedClubs: [],
-  });
+  const [filters, setFilters, isLoading] = useLocalStorage<Filters>(
+    "pd.calendar.filters",
+    {
+      excludedEventTypes: [],
+      excludedClubs: [],
+    }
+  );
 
   const filteredEvents = useMemo(() => {
     return events.filter(
@@ -26,14 +30,20 @@ export const Calendar = ({ clubs, eventTypes, events }: CalendarProps) => {
   }, [events, filters]);
 
   return (
-    <div className="flex flex-col items-center gap-10 py-10">
-      <EventFilter
-        clubs={clubs}
-        eventTypes={eventTypes}
-        filters={filters}
-        handleFilterChange={(newFilterData) => setFilters(newFilterData)}
-      />
-      <EventList events={filteredEvents} showClubName={true} />
+    <div className="flex flex-col items-center gap-10 px-1 lg:px-0">
+      <div
+        className={`${
+          isLoading ? "opacity-0" : "opacity-100"
+        } transition-all ease-in duration-500 delay-1000 flex flex-col gap-10`}
+      >
+        <EventFilter
+          clubs={clubs}
+          eventTypes={eventTypes}
+          filters={filters}
+          handleFilterChange={(newFilterData) => setFilters(newFilterData)}
+        />
+        <EventList events={filteredEvents} showClubName={true} />
+      </div>
     </div>
   );
 };

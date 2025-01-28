@@ -12,7 +12,7 @@ export default async function Page() {
   const events = await getEvents();
 
   return (
-    <div className="mx-auto md:w-3/4 lg:w-1/2 mb-52">
+    <div className="mx-auto md:w-3/4 lg:w-1/2 mb-52 h-full">
       <Link href="/">
         <Image
           src={logo}
