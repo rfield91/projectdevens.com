@@ -1,7 +1,7 @@
 import logo from "@/app/assets/project_devens_logo.png";
 import Image from "next/image";
 import Link from "next/link";
-import { Information } from "./components/information";
+import { Information } from "../features/homepage/components/information";
 
 export default function Home() {
   const pages = [
@@ -35,14 +35,11 @@ export default function Home() {
       <div className="flex justify-center">
         <ul className="flex flex-col text-center">{links}</ul>
       </div>
-      
+
       <div className="flex justify-center py-10 w-3/4 mx-auto">
-        <Image src={logo} alt="PROJECT.Devens Logo" height={100}/>
+        <Image src={logo} alt="PROJECT.Devens Logo" height={100} />
       </div>
-
-      
-
-      <Information/>
+      <Information />
     </main>
   );
 }
