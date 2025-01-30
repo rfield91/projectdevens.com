@@ -1,6 +1,11 @@
 "use client";
 import { FilterListItem } from "@/components/filter-list/filter-list-item";
-import { FilterListItemDetails } from "@/components/filter-list/types";
+
+export type FilterListItemDetails = {
+  id: string;
+  name: string;
+  enabled: boolean;
+};
 
 export type FilterListProps = {
   items: FilterListItemDetails[];

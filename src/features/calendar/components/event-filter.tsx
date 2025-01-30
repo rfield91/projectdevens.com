@@ -1,5 +1,7 @@
-import { FilterList } from "@/components/filter-list/filter-list";
-import { FilterListItemDetails } from "@/components/filter-list/types";
+import {
+  FilterList,
+  FilterListItemDetails,
+} from "@/components/filter-list/filter-list";
 import { Club, EventType, Filters } from "@/features/calendar/schemas/calendar";
 
 type EventFilterProps = {
