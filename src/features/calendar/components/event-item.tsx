@@ -1,4 +1,4 @@
-import { Event } from "@/types/calendar";
+import { Event } from "@/features/calendar/schemas/calendar";
 import { format } from "date-fns";
 import Link from "next/link";
 

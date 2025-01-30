@@ -1,5 +1,5 @@
-import { FilterListItemDetails } from "@/app/components/filter-list/types";
-import { ToggleableButton } from "@/app/components/toggleable-button";
+import { FilterListItemDetails } from "@/components/filter-list/filter-list";
+import { ToggleableButton } from "@/components/toggleable-button";
 
 type FilterItemProps = {
   item: FilterListItemDetails;

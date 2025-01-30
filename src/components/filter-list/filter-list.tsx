@@ -1,6 +1,6 @@
 "use client";
-import { FilterListItem } from "@/app/components/filter-list/filter-list-item";
-import { FilterListItemDetails } from "@/app/components/filter-list/types";
+import { FilterListItem } from "@/components/filter-list/filter-list-item";
+import { FilterListItemDetails } from "@/components/filter-list/types";
 
 export type FilterListProps = {
   items: FilterListItemDetails[];
