@@ -1,7 +1,7 @@
 import logo from "@/app/assets/project_devens_logo.png";
 import { EventList } from "@/features/calendar/components/events-list";
 import { getClubBySlug } from "@/features/calendar/db/clubs";
-import { getEventsByClub } from "@/features/calendar/db/events";
+import { getUpcomingEventsByClub } from "@/features/calendar/db/events";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -18,7 +18,7 @@ export default async function Page({
     return <div>Club Not Found</div>;
   }
 
-  const events = await getEventsByClub(club.clubId);
+  const events = await getUpcomingEventsByClub(club.clubId);
 
   return (
     <div className="mx-auto md:w-3/4 lg:w-1/2 mb-52">

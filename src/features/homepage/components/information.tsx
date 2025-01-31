@@ -1,11 +1,21 @@
+import Link from "next/link";
+
 export const Information = () => {
   return (
     <>
-      <header className="bg-[#c21d30] text-gray-100 p-6 text-center">
+      <header className="bg-[#c21d30] text-gray-100 p-6 text-center flex flex-col gap-4">
         <h1 className="text-3xl font-bold">Autocross in New England</h1>
-        <p className="text-lg mt-2">
-          Your guide to the most thrilling grassroots motorsport in the region
-        </p>
+        <div className="text-lg">
+          Your guide to the most thrilling grassroots motorsport in the region.
+        </div>
+        <div>
+          <Link
+            href="/calendar"
+            className="bg-white text-zinc-800 p-5 inline-block rounded-full font-bold hover:brightness-90 hover:text-zinc-700 transition-all ease-in-out duration-500"
+          >
+            View Upcoming Events
+          </Link>
+        </div>
       </header>
 
       <div className="container mx-auto p-6">

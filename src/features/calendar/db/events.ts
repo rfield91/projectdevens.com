@@ -1,9 +1,12 @@
+"use cache";
 import { db } from "@/db";
 import { eventsTable } from "@/db/schema";
-import { eq, gte } from "drizzle-orm";
+import { and, eq, gte } from "drizzle-orm";
+import { cacheTag } from "next/dist/server/use-cache/cache-tag";
 
-export async function getEvents() {
-  const events = await db.query.eventsTable.findMany({
+export async function getUpcomingEvents() {
+  cacheTag(`events/upcoming`);
+  return await db.query.eventsTable.findMany({
     with: {
       club: true,
       type: true,
@@ -11,19 +14,19 @@ export async function getEvents() {
     where: gte(eventsTable.endsAt, new Date()),
     orderBy: eventsTable.startsAt,
   });
-
-  return events;
 }
 
-export async function getEventsByClub(clubId: string) {
-  const events = await db.query.eventsTable.findMany({
+export async function getUpcomingEventsByClub(clubId: string) {
+  cacheTag(`events/${clubId}/upcoming`);
+  return await db.query.eventsTable.findMany({
     with: {
       club: true,
       type: true,
     },
-    where: eq(eventsTable.clubId, clubId),
+    where: and(
+      eq(eventsTable.clubId, clubId),
+      gte(eventsTable.endsAt, new Date())
+    ),
     orderBy: eventsTable.startsAt,
   });
-
-  return events;
 }
