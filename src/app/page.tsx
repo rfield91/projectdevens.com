@@ -19,9 +19,9 @@ export default function Home() {
 
   const links = pages.map((page) => {
     return (
-      <li className="mx-6 mt-2" key={page.key}>
+      <li key={page.key}>
         <Link
-          className="text-zinc-400 text-xl inline-block p-2 rounded-t-lg border-b-2 border-transparent hover:text-zinc-400 hover:border-zinc-400 transition-all ease-in-out"
+          className="text-gray-100 text-xl inline-block p-4 rounded-t-lg border-b-2 border-transparent hover:brightness-90 hover:bg-zinc-700 hover:border-red-700 transition-all ease-in-out duration-500"
           href={page.link}
         >
           {page.name}
@@ -31,10 +31,12 @@ export default function Home() {
   });
 
   return (
-    <main className="">
-      <div className="flex justify-center">
-        <ul className="flex flex-col text-center">{links}</ul>
-      </div>
+    <main>
+      <nav className="bg-zinc-800">
+        <div className="container mx-auto">
+          <ul className="flex justify-end">{links}</ul>
+        </div>
+      </nav>
 
       <div className="flex justify-center py-10 w-3/4 mx-auto">
         <Image src={logo} alt="PROJECT.Devens Logo" height={100} />

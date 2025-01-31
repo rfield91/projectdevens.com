@@ -31,8 +31,8 @@ export const eventsTable = pgTable("events", {
   typeId: uuid()
     .notNull()
     .references(() => typesTable.typeId, { onDelete: "cascade" }),
-  startsAt: timestamp().notNull(),
-  endsAt: timestamp().notNull(),
+  startsAt: timestamp({ withTimezone: true }).notNull(),
+  endsAt: timestamp({ withTimezone: true }).notNull(),
   slug: text().notNull(),
   url: text(),
   title: text().notNull(),
