@@ -1,4 +1,5 @@
 import { FilterableEventsTable } from "@/app/admin/calendar/events/_components/filterable-events-table";
+import Loading from "@/components/loading/loading";
 import { Stack } from "@/components/stack/stack";
 import { Button } from "@/components/ui/button";
 import { getClubsForUser } from "@/features/admin/calendar/db/clubs";
@@ -9,8 +10,7 @@ import { Suspense } from "react";
 
 export default async function Page() {
   return (
-    <Suspense fallback={<div>Loading...</div>}>
-      {" "}
+    <Suspense fallback={<Loading />}>
       <UserEvents />
     </Suspense>
   );

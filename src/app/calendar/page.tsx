@@ -5,8 +5,17 @@ import { getEventTypes } from "@/features/calendar/db/event-types";
 import { getUpcomingEvents } from "@/features/calendar/db/events";
 import Image from "next/image";
 import Link from "next/link";
+import { Suspense } from "react";
 
 export default async function Page() {
+  return (
+    <Suspense>
+      <CalendarContent />
+    </Suspense>
+  );
+}
+
+async function CalendarContent() {
   const eventTypes = await getEventTypes();
   const clubs = await getClubs();
   const events = await getUpcomingEvents();

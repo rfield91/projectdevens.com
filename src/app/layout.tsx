@@ -19,20 +19,20 @@ export const metadata: Metadata = {
   description: "PROJECT.Devens",
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <ClerkProvider>
-      <html lang="en">
-        <body
-          className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen dark:bg-neutral-900 dark:text-white text-neutral-700`}
-        >
-          <Suspense>{children}</Suspense>
-        </body>
-      </html>
-    </ClerkProvider>
+    <html lang="en">
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen dark:bg-neutral-900 dark:text-white text-neutral-700`}
+      >
+        <Suspense>
+          <ClerkProvider>{children}</ClerkProvider>
+        </Suspense>
+      </body>
+    </html>
   );
 }

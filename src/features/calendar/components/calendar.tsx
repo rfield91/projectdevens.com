@@ -34,7 +34,7 @@ export const Calendar = ({ clubs, eventTypes, events }: CalendarProps) => {
       <div
         className={`${
           isLoading ? "opacity-0" : "opacity-100"
-        } transition-all ease-in duration-500 delay-1000 flex flex-col gap-10`}
+        } transition-all ease-in duration-1000 delay-250 flex flex-col gap-10`}
       >
         <EventFilter
           clubs={clubs}
@@ -42,6 +42,12 @@ export const Calendar = ({ clubs, eventTypes, events }: CalendarProps) => {
           filters={filters}
           handleFilterChange={(newFilterData) => setFilters(newFilterData)}
         />
+      </div>
+      <div
+        className={`${
+          isLoading ? "opacity-0" : "opacity-100"
+        } transition-all ease-in duration-1000 delay-500 flex flex-col gap-10`}
+      >
         <EventList events={filteredEvents} showClubName={true} />
       </div>
     </div>
