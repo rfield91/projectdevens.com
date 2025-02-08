@@ -1,5 +1,5 @@
 import { FilterListItemDetails } from "@/components/filter-list/filter-list";
-import { ToggleableButton } from "@/components/toggleable-button";
+import { ToggleableButton } from "@/components/toggleable-button/toggleable-button";
 
 type FilterItemProps = {
   item: FilterListItemDetails;
@@ -12,7 +12,6 @@ export const FilterListItem = ({ item, onClick }: FilterItemProps) => {
       text={item.name}
       enabled={item.enabled}
       state={item.enabled ? "enabled" : "disabled"}
-      variant={"default"}
       onClick={() => onClick()}
     />
   );

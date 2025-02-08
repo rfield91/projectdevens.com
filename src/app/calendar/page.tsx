@@ -1,8 +1,8 @@
 import logo from "@/app/assets/project_devens_logo.png";
 import { Calendar } from "@/features/calendar/components/calendar";
 import { getClubs } from "@/features/calendar/db/clubs";
+import { getEventTypes } from "@/features/calendar/db/event-types";
 import { getUpcomingEvents } from "@/features/calendar/db/events";
-import { getEventTypes } from "@/features/calendar/db/eventTypes";
 import Image from "next/image";
 import Link from "next/link";
 

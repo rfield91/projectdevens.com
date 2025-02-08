@@ -7,7 +7,7 @@ import { cacheTag } from "next/dist/server/use-cache/cache-tag";
 
 export async function getClubs() {
   cacheTag("clubs");
-  return await db.select().from(clubsTable);
+  return await db.select().from(clubsTable).orderBy(clubsTable.name);
 }
 
 export async function getClubBySlug(slug: string) {
