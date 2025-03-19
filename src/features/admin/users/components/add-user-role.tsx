@@ -30,7 +30,7 @@ import { InferResultType } from "@/db/helpers";
 // import { userRoles } from "@/db/schema";
 import { createUserToRoleRelation } from "@/features/admin/users/actions/users";
 import { addUserRoleFormSchema } from "@/features/admin/users/schemas/users";
-import { userRoles } from "@/schemas/users";
+import { userRoles } from "@/types/users";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useState } from "react";
 import { useForm } from "react-hook-form";

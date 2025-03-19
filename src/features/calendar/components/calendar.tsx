@@ -3,7 +3,7 @@
 import { EventFilter } from "@/features/calendar/components/event-filter";
 import { EventList } from "@/features/calendar/components/events-list";
 import { useLocalStorage } from "@/hooks/use-local-storage";
-import { Club, Event, EventType, Filters } from "@/schemas/calendar/calendar";
+import { Club, Event, EventType, Filters } from "@/types/calendar/calendar";
 import { useMemo } from "react";
 
 type CalendarProps = {

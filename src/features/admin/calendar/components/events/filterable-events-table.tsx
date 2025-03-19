@@ -10,7 +10,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { Club, Event } from "@/schemas/calendar/calendar";
+import { Club, Event } from "@/types/calendar/calendar";
 import { PencilIcon } from "lucide-react";
 import Link from "next/link";
 import { useMemo, useState } from "react";

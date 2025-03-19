@@ -16,7 +16,7 @@ import {
   updateEventType,
 } from "@/features/admin/calendar/actions/event-types";
 import { eventTypeFormSchema } from "@/features/admin/calendar/schemas/event-types";
-import { EventType } from "@/schemas/calendar/calendar";
+import { EventType } from "@/types/calendar/calendar";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { TrashIcon } from "lucide-react";
 import Link from "next/link";
@@ -69,7 +69,6 @@ export function EventTypeForm({ eventType }: EventTypeFormProps) {
           )}
         />
         <div className="flex gap-2">
-          {/* TODO: Fix text color */}
           <Button className="text-neutral-800" variant={"outline"} asChild>
             <Link href={"/admin/calendar/formats"}>Cancel</Link>
           </Button>

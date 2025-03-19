@@ -1,5 +1,5 @@
 import { clubsTable } from "@/db/schema";
-import { userRoles } from "@/schemas/users";
+import { userRoles } from "@/types/users";
 import { relations } from "drizzle-orm";
 import {
   pgEnum,

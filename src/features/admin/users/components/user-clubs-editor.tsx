@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { InferResultType } from "@/db/helpers";
 import { deleteUserToClubRelation } from "@/features/admin/users/actions/users";
 import { AddUserClub } from "@/features/admin/users/components/add-user-club";
-import { Club } from "@/schemas/calendar/calendar";
+import { Club } from "@/types/calendar/calendar";
 import { TrashIcon } from "lucide-react";
 
 type UserClubsEditorProps = {

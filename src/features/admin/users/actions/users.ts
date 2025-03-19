@@ -10,7 +10,7 @@ import {
   addUserClubFormSchema,
   addUserRoleFormSchema,
 } from "@/features/admin/users/schemas/users";
-import { UserRole } from "@/schemas/users";
+import { UserRole } from "@/types/users";
 import { redirect } from "next/navigation";
 import { z } from "zod";
 

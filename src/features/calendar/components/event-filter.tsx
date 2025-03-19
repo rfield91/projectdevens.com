@@ -3,7 +3,7 @@ import {
   FilterListItemDetails,
 } from "@/components/filter-list/filter-list";
 import { Stack } from "@/components/stack/stack";
-import { Club, EventType, Filters } from "@/schemas/calendar/calendar";
+import { Club, EventType, Filters } from "@/types/calendar/calendar";
 
 type EventFilterProps = {
   eventTypes: EventType[];

@@ -1,4 +1,4 @@
-import { userRoles } from "@/schemas/users";
+import { userRoles } from "@/types/users";
 import { z } from "zod";
 
 export const addUserClubFormSchema = z.object({

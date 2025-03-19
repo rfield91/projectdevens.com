@@ -1,6 +1,5 @@
 "use client";
 
-import { Stack } from "@/components/stack/stack";
 import { Button } from "@/components/ui/button";
 import {
   Form,
@@ -17,7 +16,7 @@ import {
   updateClub,
 } from "@/features/admin/calendar/actions/clubs";
 import { clubFormSchema } from "@/features/admin/calendar/schemas/clubs";
-import { Club } from "@/schemas/calendar/calendar";
+import { Club } from "@/types/calendar/calendar";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { TrashIcon } from "lucide-react";
 import Link from "next/link";
@@ -69,7 +68,7 @@ export function ClubForm({ club }: ClubFormProps) {
             </FormItem>
           )}
         />
-        <Stack>
+        <div className="flex gap-2">
           <Button className="text-neutral-800" variant={"outline"} asChild>
             <Link href={"/admin/calendar/clubs"}>Cancel</Link>
           </Button>
@@ -88,7 +87,7 @@ export function ClubForm({ club }: ClubFormProps) {
               <TrashIcon />
             </Button>
           )}
-        </Stack>
+        </div>
       </form>
     </Form>
   );

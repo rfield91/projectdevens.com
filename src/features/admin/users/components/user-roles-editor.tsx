@@ -7,7 +7,7 @@ import { InferResultType } from "@/db/helpers";
 import { deleteUserToRoleRelation } from "@/features/admin/users/actions/users";
 
 import { AddUserRole } from "@/features/admin/users/components/add-user-role";
-import { UserRole } from "@/schemas/users";
+import { UserRole } from "@/types/users";
 import { TrashIcon } from "lucide-react";
 
 type UserRolesEditorProps = {

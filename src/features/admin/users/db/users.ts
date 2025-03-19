@@ -1,6 +1,6 @@
 import { db } from "@/db";
 import { usersToClubsTable, usersToRolesTable } from "@/db/schema";
-import { UserRole } from "@/schemas/users";
+import { UserRole } from "@/types/users";
 import { and, eq } from "drizzle-orm";
 
 export async function insertUserToClubRecord(

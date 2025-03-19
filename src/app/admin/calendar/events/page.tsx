@@ -1,7 +1,7 @@
-import { FilterableEventsTable } from "@/app/admin/calendar/events/_components/filterable-events-table";
 import Loading from "@/components/loading/loading";
 import { Stack } from "@/components/stack/stack";
 import { Button } from "@/components/ui/button";
+import { FilterableEventsTable } from "@/features/admin/calendar/components/events/filterable-events-table";
 import { getClubsForUser } from "@/features/admin/calendar/db/clubs";
 import { getUpcomingEventsForUser } from "@/features/admin/calendar/db/events";
 import { getUser } from "@/services/user";
