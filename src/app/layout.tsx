@@ -1,3 +1,4 @@
+import { ClerkProvider } from "@clerk/nextjs";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { Suspense } from "react";
@@ -18,7 +19,7 @@ export const metadata: Metadata = {
   description: "PROJECT.Devens",
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
@@ -26,9 +27,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen bg-zinc-900 text-white`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen dark:bg-neutral-900 dark:text-white text-neutral-700`}
       >
-        <Suspense>{children}</Suspense>
+        <Suspense>
+          <ClerkProvider>{children}</ClerkProvider>
+        </Suspense>
       </body>
     </html>
   );

@@ -2,7 +2,8 @@ import {
   FilterList,
   FilterListItemDetails,
 } from "@/components/filter-list/filter-list";
-import { Club, EventType, Filters } from "@/features/calendar/schemas/calendar";
+import { Stack } from "@/components/stack/stack";
+import { Club, EventType, Filters } from "@/types/calendar/calendar";
 
 type EventFilterProps = {
   eventTypes: EventType[];
@@ -40,7 +41,7 @@ export const EventFilter = ({
   }
 
   return (
-    <div className="flex flex-col gap-4">
+    <Stack gap="sm">
       <h3 className="text-center text-xl font-bold">Format</h3>
       <FilterList
         items={eventTypes.map((eventType) => ({
@@ -81,7 +82,11 @@ export const EventFilter = ({
         filters.excludedEventTypes.length != 0) && (
         <div className="text-center">
           <button
-            className="bg-zinc-300 text-zinc-800 p-1.5 text-xs rounded-full tracking-wider hover:bg-zinc-400"
+            className={`
+              inline-block rounded-full text-xs p-2 hover:brightness-90 transition-all ease-in-out duration-500
+              bg-neutral-300 text-neutral-700 hover:text-neutral-800
+              dark:bg-neutral-800 dark:text-white dark:hover:text-neutral-100
+            `}
             onClick={() =>
               handleFilterChange({
                 excludedClubs: [],
@@ -93,6 +98,6 @@ export const EventFilter = ({
           </button>
         </div>
       )}
-    </div>
+    </Stack>
   );
 };

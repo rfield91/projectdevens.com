@@ -1,5 +1,5 @@
 import { EventItem } from "@/features/calendar/components/event-item";
-import { Event } from "@/features/calendar/schemas/calendar";
+import { Event } from "@/types/calendar/calendar";
 
 type EventListProps = {
   events: Event[];
