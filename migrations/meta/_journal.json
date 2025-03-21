@@ -8,6 +8,13 @@
       "when": 1738881585533,
       "tag": "0000_fantastic_human_fly",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1742415238935,
+      "tag": "0001_groovy_natasha_romanoff",
+      "breakpoints": true
     }
   ]
 }

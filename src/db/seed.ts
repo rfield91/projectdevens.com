@@ -25,7 +25,7 @@ async function main() {
   const eventData = await fs.readFile("./src/db/data/events.tsv");
 
   const rows = eventData.toString().split("\r\n");
-
+  console.log(rows);
   const events = rows
     .map((row, i) => {
       if (i == 0) return null;
@@ -44,7 +44,7 @@ async function main() {
         endsAt: endsAt,
         slug: `${format(startsAt, "yyyy-MM-dd")}-${title.replace(" ", "-")}`,
         title: cleanedTitle,
-        url: link.length === 0 ? undefined : link,
+        url: !link || link.length === 0 ? undefined : link,
       };
     })
     .filter((ev) => ev != null);
