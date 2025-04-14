@@ -8,17 +8,22 @@ import Link from "next/link";
 export default async function Page({
   params,
 }: {
-  params: Promise<{ slug: string }>;
+  params: Promise<{ slug: string[] }>;
 }) {
   const { slug } = await params;
+  const [clubSlug, typeSlug] = slug;
 
-  const club = await getClubBySlug(slug);
+  const club = await getClubBySlug(clubSlug);
 
   if (club === undefined) {
     return <div>Club Not Found</div>;
   }
 
-  const events = await getUpcomingEventsByClub(club.clubId);
+  let events = await getUpcomingEventsByClub(club.clubId);
+
+  if (typeSlug !== undefined) {
+    events = events.filter((ev) => ev.type.slug === typeSlug);
+  }
 
   return (
     <div className="mx-auto md:w-3/4 lg:w-1/2 mb-52">
